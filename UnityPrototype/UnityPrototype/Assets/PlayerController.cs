@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public Camera firstPersonCamera;
+    public Texture2D crosshairImage;
 
     public float speedH = 2.0f;
     public float speedV = 2.0f;
@@ -40,18 +41,31 @@ public class PlayerController : MonoBehaviour
     {
         TurnCamera();
 
+        // on click, shoot grappling hook
         if (Input.GetMouseButtonDown(0))
         {
             ShootHook();
         }
 
+        // begin reeling player in to hook location
         if (hookPulling)
         {
             PullToHook();
         }
     }
 
-    
+    void OnGUI()
+    {
+        // draw crosshair
+        float xMin = (Screen.width / 2) - (crosshairImage.width / 32);
+        float yMin = (Screen.height / 2) - (crosshairImage.height / 32);
+        GUI.DrawTexture(new Rect(xMin, yMin, crosshairImage.width / 16, crosshairImage.height / 16), crosshairImage);
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        StopPulling();
+    }
 
     private void TurnCamera()
     {
@@ -68,6 +82,7 @@ public class PlayerController : MonoBehaviour
         {
             hookLocation = hit.point;
             hookPulling = true;
+            GetComponent<Rigidbody>().useGravity = false;
 
             startMarker = transform;
 
@@ -89,7 +104,19 @@ public class PlayerController : MonoBehaviour
         // Fraction of journey completed = current distance divided by total distance.
         float fracJourney = distCovered / journeyLength;
 
+        if (fracJourney >= 1.0f)
+        {
+            StopPulling();
+        }
+
         // Set our position as a fraction of the distance between the markers.
         transform.position = Vector3.Lerp(startMarker.position, hookLocation, fracJourney);
+    }
+
+    private void StopPulling()
+    {
+        print("journey over");
+        hookPulling = false;
+        GetComponent<Rigidbody>().useGravity = true;
     }
 }
