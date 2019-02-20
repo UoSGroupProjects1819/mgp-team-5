@@ -8,6 +8,11 @@ public class PlayerController : MonoBehaviour
     public Texture2D crosshairImage;
     private Rigidbody body;
 
+    public float timeRemaining;
+    private int prevRoundedTime;
+    private int roundedTime;
+    private int timeForUI;
+
     public float moveSpeed;
 
     public float mouseSpeedH = 2.0f;
@@ -43,12 +48,22 @@ public class PlayerController : MonoBehaviour
         // lock cursor to window
         // TODO: on pause, unlock cursor.
         Cursor.lockState = CursorLockMode.Locked;
+
+        roundedTime = (int)timeRemaining;
+        timeForUI = roundedTime;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(isGrounded);
+        // update timer
+        timeRemaining -= Time.deltaTime;
+        roundedTime = Mathf.FloorToInt(timeRemaining);
+        if (prevRoundedTime != roundedTime)
+        {
+            timeForUI = roundedTime;
+        }
+        prevRoundedTime = roundedTime;
 
         TurnCamera();
         if (isGrounded)
@@ -65,7 +80,7 @@ public class PlayerController : MonoBehaviour
         // on click, attempt to shoot grappling hook
         if (Input.GetAxis("LaunchHook") > 0)
         {
-            if (isGrounded && hookReady)
+            if (hookReady)
             {
                 ShootHook();
             }
@@ -92,6 +107,8 @@ public class PlayerController : MonoBehaviour
         float xMin = (Screen.width / 2) - (crosshairImage.width / 32);
         float yMin = (Screen.height / 2) - (crosshairImage.height / 32);
         GUI.DrawTexture(new Rect(xMin, yMin, crosshairImage.width / 16, crosshairImage.height / 16), crosshairImage);
+
+        GUI.Label(new Rect(0, 0, 100, 100), timeForUI.ToString());
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -148,6 +165,7 @@ public class PlayerController : MonoBehaviour
         {
             hookLocation = hit.point;
             hookPulling = true;
+            hookReady = false;
             GetComponent<Rigidbody>().useGravity = false;
 
             startMarker = transform;
@@ -157,8 +175,6 @@ public class PlayerController : MonoBehaviour
 
             // Calculate the journey length.
             journeyLength = Vector3.Distance(startMarker.position, hookLocation);
-
-            print("ray hit");
         }
     }
 
@@ -166,6 +182,7 @@ public class PlayerController : MonoBehaviour
     {
         print("stopping pulling");
         hookPulling = false;
+        hookReady = true;
         GetComponent<Rigidbody>().useGravity = true;
     }
 
