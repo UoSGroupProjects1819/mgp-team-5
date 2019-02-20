@@ -33,7 +33,9 @@ public class PlayerController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        // lock cursor to window
+        // TODO: on pause, unlock cursor.
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
@@ -41,8 +43,14 @@ public class PlayerController : MonoBehaviour
     {
         TurnCamera();
 
+        // on pressing escape
+        if (Input.GetAxis("Pause") > 0)
+        {
+            PauseGame();
+        }
+
         // on click, shoot grappling hook
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetAxis("LaunchHook") > 0)
         {
             ShootHook();
         }
@@ -67,12 +75,26 @@ public class PlayerController : MonoBehaviour
         StopPulling();
     }
 
-    private void TurnCamera()
+    private void PauseGame()
     {
-        yaw += speedH * Input.GetAxis("Mouse X");
-        pitch -= speedV * Input.GetAxis("Mouse Y");
+        Debug.Log("Pausing...");
+    }
 
-        transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);
+    private void PullToHook()
+    {
+        // Distance moved = time * speed.
+        float distCovered = (Time.time - startTime) * speed;
+
+        // Fraction of journey completed = current distance divided by total distance.
+        float fracJourney = distCovered / journeyLength;
+
+        if (fracJourney >= 1.0f)
+        {
+            StopPulling();
+        }
+
+        // Set our position as a fraction of the distance between the markers.
+        transform.position = Vector3.Lerp(startMarker.position, hookLocation, fracJourney);
     }
 
     private void ShootHook()
@@ -96,27 +118,18 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void PullToHook()
-    {
-        // Distance moved = time * speed.
-        float distCovered = (Time.time - startTime) * speed;
-
-        // Fraction of journey completed = current distance divided by total distance.
-        float fracJourney = distCovered / journeyLength;
-
-        if (fracJourney >= 1.0f)
-        {
-            StopPulling();
-        }
-
-        // Set our position as a fraction of the distance between the markers.
-        transform.position = Vector3.Lerp(startMarker.position, hookLocation, fracJourney);
-    }
-
     private void StopPulling()
     {
         print("journey over");
         hookPulling = false;
         GetComponent<Rigidbody>().useGravity = true;
+    }
+
+    private void TurnCamera()
+    {
+        yaw += speedH * Input.GetAxis("Mouse X");
+        pitch -= speedV * Input.GetAxis("Mouse Y");
+
+        transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);
     }
 }
