@@ -6,22 +6,27 @@ public class PlayerController : MonoBehaviour
 {
     public Camera firstPersonCamera;
     public Texture2D crosshairImage;
+    private Rigidbody body;
 
-    public float speedH = 2.0f;
-    public float speedV = 2.0f;
+    public float moveSpeed;
+
+    public float mouseSpeedH = 2.0f;
+    public float mouseSpeedV = 2.0f;
 
     private float yaw = 0.0f;
     private float pitch = 0.0f;
 
     private Vector3 hookLocation;
     private bool hookPulling = false;
+    private bool hookReady = true;
+    private bool isGrounded = false;
 
     // Transforms to act as start and end markers for the journey.
     public Transform startMarker;
     public Transform endMarker;
 
     // Movement speed in units/sec.
-    public float speed = 1.0F;
+    public float pullInSpeed = 1.0F;
 
     // Time when the movement started.
     private float startTime;
@@ -33,6 +38,8 @@ public class PlayerController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        body = GetComponent<Rigidbody>();
+
         // lock cursor to window
         // TODO: on pause, unlock cursor.
         Cursor.lockState = CursorLockMode.Locked;
@@ -41,7 +48,13 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Debug.Log(isGrounded);
+
         TurnCamera();
+        if (isGrounded)
+        {
+            Walk();
+        }
 
         // on pressing escape
         if (Input.GetAxis("Pause") > 0)
@@ -49,10 +62,13 @@ public class PlayerController : MonoBehaviour
             PauseGame();
         }
 
-        // on click, shoot grappling hook
+        // on click, attempt to shoot grappling hook
         if (Input.GetAxis("LaunchHook") > 0)
         {
-            ShootHook();
+            if (isGrounded && hookReady)
+            {
+                ShootHook();
+            }
         }
 
         // begin reeling player in to hook location
@@ -60,6 +76,14 @@ public class PlayerController : MonoBehaviour
         {
             PullToHook();
         }
+    }
+
+    private void Walk()
+    {
+        body.velocity = (transform.forward * Input.GetAxis("Vertical")) * moveSpeed * Time.fixedDeltaTime;
+        body.velocity += (transform.right * Input.GetAxis("Horizontal")) * moveSpeed * Time.fixedDeltaTime;
+
+        //body.velocity = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * moveSpeed * Time.fixedDeltaTime;
     }
 
     void OnGUI()
@@ -70,9 +94,29 @@ public class PlayerController : MonoBehaviour
         GUI.DrawTexture(new Rect(xMin, yMin, crosshairImage.width / 16, crosshairImage.height / 16), crosshairImage);
     }
 
-    void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
-        StopPulling();
+        if (hookPulling)
+        {
+            StopPulling();
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        
+    }
+
+    public void OnFeetCollisionEnter()
+    {
+        Debug.Log("feet on ground");
+        isGrounded = true;
+    }
+
+    public void OnFeetCollisionExit()
+    {
+        Debug.Log("feet off ground");
+        isGrounded = false;
     }
 
     private void PauseGame()
@@ -83,7 +127,7 @@ public class PlayerController : MonoBehaviour
     private void PullToHook()
     {
         // Distance moved = time * speed.
-        float distCovered = (Time.time - startTime) * speed;
+        float distCovered = (Time.time - startTime) * pullInSpeed;
 
         // Fraction of journey completed = current distance divided by total distance.
         float fracJourney = distCovered / journeyLength;
@@ -120,15 +164,15 @@ public class PlayerController : MonoBehaviour
 
     private void StopPulling()
     {
-        print("journey over");
+        print("stopping pulling");
         hookPulling = false;
         GetComponent<Rigidbody>().useGravity = true;
     }
 
     private void TurnCamera()
     {
-        yaw += speedH * Input.GetAxis("Mouse X");
-        pitch -= speedV * Input.GetAxis("Mouse Y");
+        yaw += mouseSpeedH * Input.GetAxis("Mouse X");
+        pitch -= mouseSpeedV * Input.GetAxis("Mouse Y");
 
         transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);
     }
