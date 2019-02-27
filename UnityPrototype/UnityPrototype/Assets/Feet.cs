@@ -16,23 +16,6 @@ public class Feet : MonoBehaviour {
 		
 	}
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log("feet touched enter");
-        if (!collision.gameObject.CompareTag("Player"))
-        {
-            //pc.OnFeetCollisionEnter(collision);
-        }
-    }
-
-    private void OnCollisionExit(Collision collision)
-    {
-        if (!collision.gameObject.CompareTag("Player"))
-        {
-            //pc.OnFeetCollisionExit(collision);
-        }
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("feet touched enter");

@@ -139,6 +139,7 @@ public class PlayerController : MonoBehaviour
     private void PauseGame()
     {
         Debug.Log("Pausing...");
+        Cursor.lockState = CursorLockMode.None;
     }
 
     private void PullToHook()
