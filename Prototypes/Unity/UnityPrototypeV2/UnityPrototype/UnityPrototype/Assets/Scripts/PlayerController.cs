@@ -2,11 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// TODO: 
+// fix bug when grappling to floor - player sort of vibrates
+// pause UI
+// intro menu UI
+// victory UI
+// failure UI
+// hook projectile
+// add next levels
+
 public class PlayerController : MonoBehaviour
 {
     public Camera firstPersonCamera;
+    public GameObject hook;
     public Texture2D crosshairImage;
     private Rigidbody body;
+
+    private enum State
+    {
+        HookMoving,
+        HookPulling,
+        HookReady,
+        Paused
+    }
+
+    State state;
 
     public float timeRemaining;
     private int prevRoundedTime;
@@ -22,9 +42,6 @@ public class PlayerController : MonoBehaviour
     private float pitch = 0.0f;
 
     private Vector3 hookLocation;
-    private bool hookPulling = false;
-    private bool hookReady = true;
-    private bool isGrounded = false;
 
     // Transforms to act as start and end markers for the journey.
     public Transform startMarker;
@@ -45,6 +62,9 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody>();
+        hook.SetActive(false);
+
+        state = State.HookReady;
 
         // lock cursor to window
         // TODO: on pause, unlock cursor.
@@ -57,7 +77,28 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (state == State.Paused)
+        {
 
+        }
+
+        switch (state)
+        {
+            case State.HookMoving:
+                
+                break;
+            case State.HookPulling:
+                PullToHook();
+                break;
+            case State.HookReady:
+                if (Input.GetAxis("LaunchHook") > 0)
+                {
+                    ShootHook();
+                }
+                break;
+            default:
+                break;
+        }
 
 
         // update timer
@@ -69,40 +110,18 @@ public class PlayerController : MonoBehaviour
         }
         prevRoundedTime = roundedTime;
 
-        TurnCamera();
-        if (isGrounded)
+        if (timeRemaining <= 0)
         {
-            Walk();
+            // fail screen, option to restart level
         }
+
+        TurnCamera();
 
         // on pressing escape
         if (Input.GetAxis("Pause") > 0)
         {
             PauseGame();
         }
-
-        // on click, attempt to shoot grappling hook
-        if (Input.GetAxis("LaunchHook") > 0)
-        {
-            if (hookReady)
-            {
-                ShootHook();
-            }
-        }
-
-        // begin reeling player in to hook location
-        if (hookPulling)
-        {
-            PullToHook();
-        }
-    }
-
-    private void Walk()
-    {
-       // body.velocity = (transform.forward * Input.GetAxis("Vertical")) * moveSpeed * Time.fixedDeltaTime;
-       // body.velocity += (transform.right * Input.GetAxis("Horizontal")) * moveSpeed * Time.fixedDeltaTime;
-
-        //body.velocity = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * moveSpeed * Time.fixedDeltaTime;
     }
 
     void OnGUI()
@@ -112,12 +131,18 @@ public class PlayerController : MonoBehaviour
         float yMin = (Screen.height / 2) - (crosshairImage.height / 32);
         GUI.DrawTexture(new Rect(xMin, yMin, crosshairImage.width / 16, crosshairImage.height / 16), crosshairImage);
 
-        GUI.Label(new Rect(0, 0, 100, 100), timeForUI.ToString());
+        GUI.Label(new Rect(20, 20, 100, 100), timeForUI.ToString());
+
+        
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (hookPulling)
+        if (collision.collider.CompareTag("Killbox"))
+        {
+            Die();
+        }
+        if (state == State.HookPulling)
         {
             StopPulling();
         }
@@ -131,13 +156,16 @@ public class PlayerController : MonoBehaviour
     public void OnFeetCollisionEnter()
     {
         Debug.Log("feet on ground");
-        isGrounded = true;
     }
 
     public void OnFeetCollisionExit()
     {
         Debug.Log("feet off ground");
-        isGrounded = false;
+    }
+
+    private void Die()
+    {
+
     }
 
     private void PauseGame()
@@ -148,6 +176,11 @@ public class PlayerController : MonoBehaviour
 
     private void PullToHook()
     {
+        
+        // Draw a line to represent the grapple rope
+        // TODO: change this to something non-debug
+        Debug.DrawRay(firstPersonCamera.transform.position, firstPersonCamera.transform.position - hookLocation, Color.black);
+
         // Distance moved = time * speed.
         float distCovered = (Time.time - startTime) * pullInSpeed;
 
@@ -161,18 +194,20 @@ public class PlayerController : MonoBehaviour
 
         // Set our position as a fraction of the distance between the markers.
         transform.position = Vector3.Lerp(startMarker.position, hookLocation, fracJourney);
+        
+        
     }
 
     private void ShootHook()
     {
-        RaycastHit hit;
         
+        RaycastHit hit;
+
         if (Physics.Raycast(firstPersonCamera.transform.position, firstPersonCamera.transform.TransformDirection(Vector3.forward), out hit, hookLength))
         {
             hookLocation = hit.point;
-            hookPulling = true;
-            hookReady = false;
-            GetComponent<Rigidbody>().useGravity = false;
+            state = State.HookPulling;
+            body.useGravity = false;
 
             startMarker = transform;
 
@@ -182,16 +217,19 @@ public class PlayerController : MonoBehaviour
             // Calculate the journey length.
             journeyLength = Vector3.Distance(startMarker.position, hookLocation);
         }
-
         
+        /*
+        hook.SetActive(true);
+        hook.transform.SetPositionAndRotation(firstPersonCamera.transform.position, firstPersonCamera.transform.rotation);
+        hook.GetComponent<Rigidbody>().velocity = hook.transform.forward * 10;
+        */
     }
 
     private void StopPulling()
     {
         print("stopping pulling");
-        hookPulling = false;
-        hookReady = true;
-        GetComponent<Rigidbody>().useGravity = true;
+        state = State.HookReady;
+        body.useGravity = true;
     }
 
     private void TurnCamera()
