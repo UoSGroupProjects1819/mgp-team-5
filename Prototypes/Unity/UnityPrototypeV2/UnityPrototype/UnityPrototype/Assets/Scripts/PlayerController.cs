@@ -16,7 +16,9 @@ public class PlayerController : MonoBehaviour
     public Camera firstPersonCamera;
     public GameObject hook;
     public Texture2D crosshairImage;
+    public Canvas deathUI;
     private Rigidbody body;
+    
 
     private enum State
     {
@@ -63,6 +65,7 @@ public class PlayerController : MonoBehaviour
     {
         body = GetComponent<Rigidbody>();
         hook.SetActive(false);
+        deathUI.enabled = false;
 
         state = State.HookReady;
 
@@ -112,10 +115,14 @@ public class PlayerController : MonoBehaviour
 
         if (timeRemaining <= 0)
         {
-            // fail screen, option to restart level
+            Debug.Log("time up");
+            Fail();
         }
 
-        TurnCamera();
+        if (state != State.Paused)
+        {
+            TurnCamera();
+        }
 
         // on pressing escape
         if (Input.GetAxis("Pause") > 0)
@@ -136,8 +143,17 @@ public class PlayerController : MonoBehaviour
         
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Killbox"))
+        {
+            Fail();
+        }
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("collision detected");
         if (collision.collider.CompareTag("Killbox"))
         {
             Fail();
@@ -165,7 +181,10 @@ public class PlayerController : MonoBehaviour
 
     private void Fail()
     {
-        // 
+        state = State.Paused;
+        Time.timeScale = 0;
+        deathUI.enabled = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 
     private void PauseGame()
