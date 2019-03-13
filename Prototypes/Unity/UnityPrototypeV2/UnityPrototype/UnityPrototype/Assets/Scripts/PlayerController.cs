@@ -4,10 +4,7 @@ using UnityEngine;
 
 // TODO: 
 // fix bug when grappling to floor - player sort of vibrates
-// pause UI
-// intro menu UI
 // victory UI
-// failure UI
 // hook projectile
 // add next levels
 
@@ -17,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public GameObject hook;
     public Texture2D crosshairImage;
     public Canvas deathUI;
+    public Canvas pauseUI;
     private Rigidbody body;
     
 
@@ -66,8 +64,10 @@ public class PlayerController : MonoBehaviour
         body = GetComponent<Rigidbody>();
         hook.SetActive(false);
         deathUI.enabled = false;
+        pauseUI.enabled = false;
 
         state = State.HookReady;
+        Time.timeScale = 1;
 
         // lock cursor to window
         // TODO: on pause, unlock cursor.
@@ -80,11 +80,6 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (state == State.Paused)
-        {
-
-        }
-
         switch (state)
         {
             case State.HookMoving:
@@ -101,26 +96,26 @@ public class PlayerController : MonoBehaviour
                 break;
             default:
                 break;
-        }
-
-
-        // update timer
-        timeRemaining -= Time.deltaTime;
-        roundedTime = Mathf.FloorToInt(timeRemaining);
-        if (prevRoundedTime != roundedTime)
-        {
-            timeForUI = roundedTime;
-        }
-        prevRoundedTime = roundedTime;
-
-        if (timeRemaining <= 0)
-        {
-            Debug.Log("time up");
-            Fail();
-        }
+        }        
 
         if (state != State.Paused)
         {
+            // update timer
+            timeRemaining -= Time.deltaTime;
+            roundedTime = Mathf.FloorToInt(timeRemaining);
+            if (prevRoundedTime != roundedTime)
+            {
+                timeForUI = roundedTime;
+            }
+            prevRoundedTime = roundedTime;
+
+            // if time <= 0, bring up fail screen
+            if (timeRemaining <= 0)
+            {
+                Debug.Log("time up");
+                Fail();
+            }
+
             TurnCamera();
         }
 
@@ -133,10 +128,14 @@ public class PlayerController : MonoBehaviour
 
     void OnGUI()
     {
-        // draw crosshair
-        float xMin = (Screen.width / 2) - (crosshairImage.width / 32);
-        float yMin = (Screen.height / 2) - (crosshairImage.height / 32);
-        GUI.DrawTexture(new Rect(xMin, yMin, crosshairImage.width / 16, crosshairImage.height / 16), crosshairImage);
+
+        if (state != State.Paused)
+        {
+            // draw crosshair
+            float xMin = (Screen.width / 2) - (crosshairImage.width / 32);
+            float yMin = (Screen.height / 2) - (crosshairImage.height / 32);
+            GUI.DrawTexture(new Rect(xMin, yMin, crosshairImage.width / 16, crosshairImage.height / 16), crosshairImage);
+        }
 
         GUI.Label(new Rect(20, 20, 100, 100), timeForUI.ToString());
 
@@ -164,11 +163,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit(Collision collision)
-    {
-        
-    }
-
     public void OnFeetCollisionEnter()
     {
         Debug.Log("feet on ground");
@@ -189,7 +183,10 @@ public class PlayerController : MonoBehaviour
 
     private void PauseGame()
     {
+        state = State.Paused;
+        Time.timeScale = 0;
         Debug.Log("Pausing...");
+        pauseUI.enabled = true;
         Cursor.lockState = CursorLockMode.None;
     }
 
