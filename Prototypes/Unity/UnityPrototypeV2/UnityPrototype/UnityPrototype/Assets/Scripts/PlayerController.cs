@@ -140,7 +140,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.collider.CompareTag("Killbox"))
         {
-            Die();
+            Fail();
         }
         if (state == State.HookPulling)
         {
@@ -163,9 +163,9 @@ public class PlayerController : MonoBehaviour
         Debug.Log("feet off ground");
     }
 
-    private void Die()
+    private void Fail()
     {
-
+        // 
     }
 
     private void PauseGame()
