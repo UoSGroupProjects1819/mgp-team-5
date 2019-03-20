@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody body;
     
 
+    // defines a state machine to ensure player doesn't hook when he shouldn't
     private enum State
     {
         HookMoving,
@@ -44,8 +45,8 @@ public class PlayerController : MonoBehaviour
     private Vector3 hookLocation;
 
     // Transforms to act as start and end markers for the journey.
-    public Transform startMarker;
-    public Transform endMarker;
+    private Transform startMarker;
+    private Transform endMarker;
 
     // Movement speed in units/sec.
     public float pullInSpeed = 1.0F;
@@ -63,16 +64,20 @@ public class PlayerController : MonoBehaviour
     {
         body = GetComponent<Rigidbody>();
         hook.SetActive(false);
+
+        // hide death and pause screens
         deathUI.enabled = false;
         pauseUI.enabled = false;
 
         state = State.HookReady;
+
+        // unpause time
         Time.timeScale = 1;
 
         // lock cursor to window
-        // TODO: on pause, unlock cursor.
         Cursor.lockState = CursorLockMode.Locked;
 
+        // set up timer variables
         roundedTime = (int)timeRemaining;
         timeForUI = roundedTime;
     }
@@ -80,14 +85,17 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // check state to decide what to do this update frame
         switch (state)
         {
             case State.HookMoving:
                 
                 break;
+            // if HookPulling then lerp the player one frame closer to destination
             case State.HookPulling:
                 PullToHook();
                 break;
+            // if HookReady then check for user input to launch hook
             case State.HookReady:
                 if (Input.GetAxis("LaunchHook") > 0)
                 {
@@ -136,13 +144,14 @@ public class PlayerController : MonoBehaviour
             GUI.DrawTexture(new Rect(xMin, yMin, crosshairImage.width / 16, crosshairImage.height / 16), crosshairImage);
         }
 
+        // draw time remaining to screen
+        // TODO: add this as a permanent UI element - saves cpu time and easier customisation
         GUI.Label(new Rect(20, 20, 100, 100), timeForUI.ToString());
-
-        
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        // if player touches killbox
         if (other.CompareTag("Killbox"))
         {
             Fail();
@@ -155,10 +164,12 @@ public class PlayerController : MonoBehaviour
         {
             Fail();
         }
+        // if player is reeling in to hook and touches a collider, stop pulling
         if (state == State.HookPulling)
         {
             StopPulling();
         }
+        // if player touches floor, freeze position - position is unfrozen when hooking
         if (collision.GetContact(0).normal.y >= 0.7f)
         {
             body.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ
@@ -166,6 +177,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // die: set state to paused, pause time, bring up death UI, unlock cursor
     private void Fail()
     {
         state = State.Paused;
@@ -174,6 +186,7 @@ public class PlayerController : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
     }
 
+    // pause: set state to pause, pause time, bring up pause UI, unlock cursor
     private void PauseGame()
     {
         state = State.Paused;
