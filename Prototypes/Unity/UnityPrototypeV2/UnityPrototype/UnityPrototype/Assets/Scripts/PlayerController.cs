@@ -112,7 +112,6 @@ public class PlayerController : MonoBehaviour
             // if time <= 0, bring up fail screen
             if (timeRemaining <= 0)
             {
-                Debug.Log("time up");
                 Fail();
             }
 
@@ -152,7 +151,6 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("collision detected");
         if (collision.collider.CompareTag("Killbox"))
         {
             Fail();
@@ -161,16 +159,11 @@ public class PlayerController : MonoBehaviour
         {
             StopPulling();
         }
-    }
-
-    public void OnFeetCollisionEnter()
-    {
-        Debug.Log("feet on ground");
-    }
-
-    public void OnFeetCollisionExit()
-    {
-        Debug.Log("feet off ground");
+        if (collision.GetContact(0).normal.y >= 0.7f)
+        {
+            body.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ
+                | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+        }
     }
 
     private void Fail()
@@ -232,6 +225,8 @@ public class PlayerController : MonoBehaviour
 
             // Calculate the journey length.
             journeyLength = Vector3.Distance(startMarker.position, hookLocation);
+
+            body.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
         }
         
         /*

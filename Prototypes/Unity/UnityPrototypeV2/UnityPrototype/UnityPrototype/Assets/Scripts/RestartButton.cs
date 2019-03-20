@@ -23,6 +23,7 @@ public class RestartButton : MonoBehaviour
 
     public void Restart()
     {
+        Debug.Log("restart triggered");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     
