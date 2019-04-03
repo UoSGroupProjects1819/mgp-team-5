@@ -5,8 +5,9 @@ using UnityEngine;
 // TODO: 
 // fix bug when grappling to floor - player sort of vibrates
 // victory UI
+// timer UI
 // hook projectile
-// 
+// give hook pull momentum?
 
 public class PlayerController : MonoBehaviour
 {
@@ -41,7 +42,7 @@ public class PlayerController : MonoBehaviour
     private float yaw = 0.0f;
     private float pitch = 0.0f;
 
-    // Transforms to act as start and end markers for the journey.
+    // Positions to act as start and end markers for the journey.
     private Vector3 startMarker;
     private Vector3 hookLocation;
 
@@ -52,7 +53,7 @@ public class PlayerController : MonoBehaviour
     // Time when the movement started.
     private float startTime;
 
-    // Total distance between the markers.
+    // Total distance between the start and end of lerp.
     private float journeyLength;
 
 
