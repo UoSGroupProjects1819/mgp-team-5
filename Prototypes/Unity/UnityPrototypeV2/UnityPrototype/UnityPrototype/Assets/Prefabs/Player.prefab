@@ -60,8 +60,6 @@ MonoBehaviour:
   moveSpeed: 300
   mouseSpeedH: 2
   mouseSpeedV: 2
-  startMarker: {fileID: 0}
-  endMarker: {fileID: 0}
   pullInSpeed: 2
   hookLength: 100
 --- !u!33 &61900209990695540
@@ -116,7 +114,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 47322942081234276}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: c9e695acd7c270645a3c881bfadaf976, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
