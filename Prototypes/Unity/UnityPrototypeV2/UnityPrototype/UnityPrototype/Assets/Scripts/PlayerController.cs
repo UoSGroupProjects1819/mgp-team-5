@@ -6,7 +6,7 @@ using UnityEngine;
 // fix bug when grappling to floor - player sort of vibrates
 // victory UI
 // hook projectile
-// add next levels
+// 
 
 public class PlayerController : MonoBehaviour
 {
@@ -17,7 +17,6 @@ public class PlayerController : MonoBehaviour
     public Canvas pauseUI;
     private Rigidbody body;
     
-
     // defines a state machine to ensure player doesn't hook when he shouldn't
     private enum State
     {
@@ -42,11 +41,9 @@ public class PlayerController : MonoBehaviour
     private float yaw = 0.0f;
     private float pitch = 0.0f;
 
-    private Vector3 hookLocation;
-
     // Transforms to act as start and end markers for the journey.
-    private Transform startMarker;
-    private Transform endMarker;
+    private Vector3 startMarker;
+    private Vector3 hookLocation;
 
     // Movement speed in units/sec.
     public float pullInSpeed = 1.0F;
@@ -83,7 +80,7 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         // check state to decide what to do this update frame
         switch (state)
@@ -93,6 +90,10 @@ public class PlayerController : MonoBehaviour
                 break;
             // if HookPulling then lerp the player one frame closer to destination
             case State.HookPulling:
+                if (Input.GetAxis("BreakHook") > 0)
+                {
+                    StopPulling();
+                }
                 PullToHook();
                 break;
             // if HookReady then check for user input to launch hook
@@ -215,7 +216,9 @@ public class PlayerController : MonoBehaviour
         }
 
         // Set our position as a fraction of the distance between the markers.
-        transform.position = Vector3.Lerp(startMarker.position, hookLocation, fracJourney);
+        //body.AddForce((hookLocation - startMarker).normalized * 60);
+
+        transform.position = Vector3.Lerp(startMarker, hookLocation, fracJourney);
         
         
     }
@@ -231,13 +234,13 @@ public class PlayerController : MonoBehaviour
             state = State.HookPulling;
             body.useGravity = false;
 
-            startMarker = transform;
+            startMarker = transform.position;
 
             // Keep a note of the time the movement started.
             startTime = Time.time;
 
             // Calculate the journey length.
-            journeyLength = Vector3.Distance(startMarker.position, hookLocation);
+            journeyLength = Vector3.Distance(startMarker, hookLocation);
 
             body.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
         }
