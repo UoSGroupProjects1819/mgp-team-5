@@ -1,4 +1,4 @@
-﻿Log file open, 04/25/19 00:03:20
+﻿Log file open, 05/01/19 09:25:11
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
@@ -9,10 +9,10 @@ LogConsoleResponse: Display: Failed to find resolution value strings in scalabil
 LogInit: Display: Running engine for game: greybox_level_test
 LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
 LogPlatformFile: Not using cached read wrapper
-LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.192998
+LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.282508
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
-LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +2:00, Platform Override: ''
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
 LogPluginManager: Mounting plugin AISupport
 LogPluginManager: Mounting plugin LightPropagationVolume
@@ -94,7 +94,7 @@ LogPluginManager: Mounting plugin RuntimePhysXCooking
 LogPluginManager: Mounting plugin SteamVR
 LogPluginManager: Mounting plugin WebMMoviePlayer
 LogPluginManager: Mounting plugin WindowsMoviePlayer
-LogStreaming: Display: Took  0.144s to configure plugins.
+LogStreaming: Display: Took  0.129s to configure plugins.
 LogInit: Using libcurl 7.55.1-DEV
 LogInit:  - built for x86_64-pc-win32
 LogInit:  - supports SSL with OpenSSL/1.0.2h
@@ -118,13 +118,13 @@ LogInit: Build: ++UE4+Release-4.21-CL-4753647
 LogInit: Engine Version: 4.21.2-4753647+++UE4+Release-4.21
 LogInit: Compatible Engine Version: 4.21.0-4541578+++UE4+Release-4.21
 LogInit: Net CL: 4541578
-LogInit: OS: Windows 10 (), CPU: AMD Ryzen 3 1300X Quad-Core Processor          , GPU: NVIDIA GeForce GTX 1050 Ti
+LogInit: OS: Windows 10 (), CPU: Intel(R) Xeon(R) CPU E5-1620 v4 @ 3.50GHz, GPU: NVIDIA GeForce GTX 970
 LogInit: Compiled (64-bit): Jan 19 2019 02:07:31
 LogInit: Compiled with Visual C++: 19.13.26129.00
 LogInit: Build Configuration: Development
 LogInit: Branch Name: ++UE4+Release-4.21
 LogInit: Command Line: 
-LogInit: Base Directory: E:/UN4-4.21/UE_4.21/Engine/Binaries/Win64/
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.21/Engine/Binaries/Win64/
 LogInit: Installed Engine Build: 1
 LogDevObjectVersion: Number of dev versions registered: 22
 LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
@@ -154,781 +154,759 @@ LogInit: Presizing for max 8388607 objects, including 0 objects not considered b
 LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
-[2019.04.24-21.03.22:125][  0]LogConfig: Setting CVar [[r.VSync:0]]
-[2019.04.24-21.03.22:125][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
-[2019.04.24-21.03.22:125][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Engine.ini]
-[2019.04.24-21.03.22:125][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
-[2019.04.24-21.03.22:125][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Engine.ini]
-[2019.04.24-21.03.22:125][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Engine.ini]
-[2019.04.24-21.03.22:125][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
-[2019.04.24-21.03.22:125][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
-[2019.04.24-21.03.22:125][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
-[2019.04.24-21.03.22:125][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
-[2019.04.24-21.03.22:125][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
-[2019.04.24-21.03.22:125][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
-[2019.04.24-21.03.22:125][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
-[2019.04.24-21.03.22:125][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
-[2019.04.24-21.03.22:125][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
-[2019.04.24-21.03.22:125][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
-[2019.04.24-21.03.22:125][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
-[2019.04.24-21.03.22:125][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
-[2019.04.24-21.03.22:125][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
-[2019.04.24-21.03.22:125][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Engine.ini]
-[2019.04.24-21.03.22:125][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
-[2019.04.24-21.03.22:125][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
-[2019.04.24-21.03.22:125][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
-[2019.04.24-21.03.22:125][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
-[2019.04.24-21.03.22:125][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
-[2019.04.24-21.03.22:125][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
-[2019.04.24-21.03.22:125][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:8388607]]
-[2019.04.24-21.03.22:125][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
-[2019.04.24-21.03.22:125][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
-[2019.04.24-21.03.22:125][  0]LogConfig: Setting CVar [[gc.MergeGCClusters:0]]
-[2019.04.24-21.03.22:125][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
-[2019.04.24-21.03.22:125][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
-[2019.04.24-21.03.22:125][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
-[2019.04.24-21.03.22:125][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
-[2019.04.24-21.03.22:125][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Engine.ini]
-[2019.04.24-21.03.22:125][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Engine.ini]
-[2019.04.24-21.03.22:170][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2019.04.24-21.03.22:170][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2019.04.24-21.03.22:171][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2019.04.24-21.03.22:171][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2019.04.24-21.03.22:171][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2019.04.24-21.03.22:171][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2019.04.24-21.03.22:171][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2019.04.24-21.03.22:171][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
-[2019.04.24-21.03.22:171][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2019.04.24-21.03.22:171][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2019.04.24-21.03.22:171][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2019.04.24-21.03.22:171][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2019.04.24-21.03.22:171][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2019.04.24-21.03.22:171][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2019.04.24-21.03.22:171][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2019.04.24-21.03.22:171][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2019.04.24-21.03.22:171][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
-[2019.04.24-21.03.22:171][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2019.04.24-21.03.22:171][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2019.04.24-21.03.22:171][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2019.04.24-21.03.22:171][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2019.04.24-21.03.22:171][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2019.04.24-21.03.22:171][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2019.04.24-21.03.22:171][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2019.04.24-21.03.22:171][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2019.04.24-21.03.22:171][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2019.04.24-21.03.22:171][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2019.04.24-21.03.22:171][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2019.04.24-21.03.22:171][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2019.04.24-21.03.22:171][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2019.04.24-21.03.22:171][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
-[2019.04.24-21.03.22:171][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2019.04.24-21.03.22:171][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2019.04.24-21.03.22:175][  0]LogInit: Selected Device Profile: [Windows]
-[2019.04.24-21.03.22:176][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2019.04.24-21.03.22:226][  0]LogHAL: Display: Platform has ~ 8 GB [8518709248 / 8589934592 / 8], which maps to Default [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2019.04.24-21.03.22:250][  0]LogConfig: Setting CVar [[r.Vulkan.UseRealUBs:1]]
-[2019.04.24-21.03.22:250][  0]LogInit: Going up to parent DeviceProfile []
-[2019.04.24-21.03.22:250][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
-[2019.04.24-21.03.22:250][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2019.04.24-21.03.22:250][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2019.04.24-21.03.22:250][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
-[2019.04.24-21.03.22:250][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2019.04.24-21.03.22:250][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
-[2019.04.24-21.03.22:250][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2019.04.24-21.03.22:250][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2019.04.24-21.03.22:250][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2019.04.24-21.03.22:250][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2019.04.24-21.03.22:250][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2019.04.24-21.03.22:250][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2019.04.24-21.03.22:250][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2019.04.24-21.03.22:250][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2019.04.24-21.03.22:250][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2019.04.24-21.03.22:250][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2019.04.24-21.03.22:250][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2019.04.24-21.03.22:250][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2019.04.24-21.03.22:250][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2019.04.24-21.03.22:250][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2019.04.24-21.03.22:250][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2019.04.24-21.03.22:250][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2019.04.24-21.03.22:250][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2019.04.24-21.03.22:250][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2019.04.24-21.03.22:250][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
-[2019.04.24-21.03.22:250][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2019.04.24-21.03.22:250][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2019.04.24-21.03.22:250][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2019.04.24-21.03.22:250][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2019.04.24-21.03.22:250][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2019.04.24-21.03.22:250][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2019.04.24-21.03.22:250][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2019.04.24-21.03.22:250][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2019.04.24-21.03.22:251][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
-[2019.04.24-21.03.22:260][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
-[2019.04.24-21.03.22:260][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Engine.ini]
-[2019.04.24-21.03.22:274][  0]LogInit: Computer: RYZEN
-[2019.04.24-21.03.22:274][  0]LogInit: User: Victor
-[2019.04.24-21.03.22:274][  0]LogInit: CPU Page size=4096, Cores=4
-[2019.04.24-21.03.22:274][  0]LogInit: High frequency timer resolution =3.703986 MHz
-[2019.04.24-21.03.22:274][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
-[2019.04.24-21.03.22:274][  0]LogMemory: Platform Memory Stats for Windows
-[2019.04.24-21.03.22:274][  0]LogMemory: Process Physical Memory: 102.58 MB used, 102.58 MB peak
-[2019.04.24-21.03.22:274][  0]LogMemory: Process Virtual Memory: 84.96 MB used, 84.96 MB peak
-[2019.04.24-21.03.22:274][  0]LogMemory: Physical Memory: 4049.02 MB used,  4075.05 MB free, 8124.07 MB total
-[2019.04.24-21.03.22:274][  0]LogMemory: Virtual Memory: 4619.60 MB used,  134213112.00 MB free, 134217728.00 MB total
-[2019.04.24-21.03.22:651][  0]LogInit: Using OS detected language (bg-BG).
-[2019.04.24-21.03.22:651][  0]LogInit: Using OS detected locale (bg-BG).
-[2019.04.24-21.03.22:684][  0]LogTextLocalizationManager: No localization for 'bg-BG' exists, so 'en' will be used for the language.
-[2019.04.24-21.03.23:333][  0]LogStreaming: Display: Took  0.675s to InitEngineTextLocalization.
-[2019.04.24-21.03.23:347][  0]LogInit: Setting process to per monitor DPI aware
-[2019.04.24-21.03.23:637][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2019.04.24-21.03.23:637][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2019.04.24-21.03.24:038][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2019.04.24-21.03.24:038][  0]LogD3D11RHI: D3D11 adapters:
-[2019.04.24-21.03.24:124][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1050 Ti' (Feature Level 11_0)
-[2019.04.24-21.03.24:124][  0]LogD3D11RHI:       4018/0/4062 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2019.04.24-21.03.24:128][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2019.04.24-21.03.24:128][  0]LogD3D11RHI:       0/0/4062 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2019.04.24-21.03.24:128][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2019.04.24-21.03.24:144][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2019.04.24-21.03.24:144][  0]LogD3D11RHI:     GPU DeviceId: 0x1c82 (for the marketing name, search the web for "GPU Device Id")
-[2019.04.24-21.03.24:144][  0]LogWindows: EnumDisplayDevices:
-[2019.04.24-21.03.24:144][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1050 Ti' (P:1 D:1)
-[2019.04.24-21.03.24:144][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1050 Ti' (P:0 D:0)
-[2019.04.24-21.03.24:145][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1050 Ti' (P:0 D:0)
-[2019.04.24-21.03.24:145][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1050 Ti' (P:0 D:0)
-[2019.04.24-21.03.24:145][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2019.04.24-21.03.24:145][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1050 Ti
-[2019.04.24-21.03.24:145][  0]LogD3D11RHI:   Driver Version: 419.67 (internal:25.21.14.1967, unified:419.67)
-[2019.04.24-21.03.24:145][  0]LogD3D11RHI:      Driver Date: 3-17-2019
-[2019.04.24-21.03.24:145][  0]LogRHI: Texture pool is 2812 MB (70% of 4018 MB)
-[2019.04.24-21.03.24:202][  0]LogD3D11RHI: Async texture creation enabled
-[2019.04.24-21.03.24:416][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
-[2019.04.24-21.03.25:172][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
-[2019.04.24-21.03.25:196][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
-[2019.04.24-21.03.25:213][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
-[2019.04.24-21.03.25:245][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
-[2019.04.24-21.03.25:273][  0]LogTemp: Display: Loaded TP MacTargetPlatform
-[2019.04.24-21.03.25:309][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
-[2019.04.24-21.03.25:334][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
-[2019.04.24-21.03.25:351][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
-[2019.04.24-21.03.25:359][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
-[2019.04.24-21.03.25:470][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.24-21.03.25:470][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.24-21.03.25:470][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.24-21.03.25:470][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.24-21.03.25:470][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.24-21.03.25:470][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.24-21.03.25:471][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.24-21.03.25:471][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.24-21.03.25:471][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.24-21.03.25:471][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.24-21.03.25:471][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.24-21.03.25:471][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.24-21.03.25:471][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.24-21.03.25:471][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.24-21.03.25:471][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.24-21.03.25:471][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.24-21.03.25:471][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.24-21.03.25:471][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.24-21.03.25:485][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
-[2019.04.24-21.03.25:585][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2019.04.24-21.03.25:585][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2019.04.24-21.03.25:612][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2019.04.24-21.03.25:612][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2019.04.24-21.03.25:635][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
-[2019.04.24-21.03.25:650][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
-[2019.04.24-21.03.25:665][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
-[2019.04.24-21.03.25:680][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
-[2019.04.24-21.03.25:740][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
-[2019.04.24-21.03.25:741][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
-[2019.04.24-21.03.25:741][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2019.04.24-21.03.26:053][  0]LogShaderCompilers: Guid format shader working directory is -31 characters bigger than the processId version (../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Intermediate/Shaders/WorkingDirectory/1976/).
-[2019.04.24-21.03.26:053][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Victor/AppData/Local/Temp/UnrealShaderWorkingDir/41923C514F0E1AA5F0F2D782B6FE8F4F/'.
-[2019.04.24-21.03.26:077][  0]LogXGEController: Cleaning working directory: C:/Users/Victor/AppData/Local/Temp/UnrealXGEWorkingDir/
-[2019.04.24-21.03.26:078][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2019.04.24-21.03.26:078][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2019.04.24-21.03.26:078][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2019.04.24-21.03.27:282][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2019.04.24-21.03.27:466][  0]LogDerivedDataCache: Loaded boot cache 0.18s 71MB C:/Users/Victor/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
-[2019.04.24-21.03.27:466][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Victor/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc
-[2019.04.24-21.03.27:466][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2019.04.24-21.03.27:466][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2019.04.24-21.03.27:466][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2019.04.24-21.03.27:466][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2019.04.24-21.03.27:515][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2019.04.24-21.03.27:515][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2019.04.24-21.03.27:515][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
-[2019.04.24-21.03.27:530][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Victor/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2019.04.24-21.03.27:530][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2019.04.24-21.03.27:530][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2019.04.24-21.03.27:589][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2019.04.24-21.03.27:643][  0]LogSlate: Using FreeType 2.6.0
-[2019.04.24-21.03.27:692][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2019.04.24-21.03.28:168][  0]LogAssetRegistry: FAssetRegistry took 0.0372 seconds to start up
-[2019.04.24-21.03.30:976][  0]LogInit: Selected Device Profile: [Windows]
-[2019.04.24-21.03.31:709][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2019.04.24-21.03.31:773][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
-[2019.04.24-21.03.31:773][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2019.04.24-21.03.31:773][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2019.04.24-21.03.31:773][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
-[2019.04.24-21.03.31:987][  0]LogNetVersion: greybox_level_test 1.0.0, NetCL: 4541578, EngineNetVer: 5, GameNetVer: 0 (Checksum: 3484623482)
-[2019.04.24-21.03.34:225][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 1 prioritized culture(s) in 0.115070 seconds
-[2019.04.24-21.03.34:237][  0]LogUObjectArray: 39775 objects as part of root set at end of initial load.
-[2019.04.24-21.03.34:237][  0]LogUObjectAllocator: 6914656 out of 0 bytes used by permanent object pool.
-[2019.04.24-21.03.34:237][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2019.04.24-21.03.38:382][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2019.04.24-21.03.38:410][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2019.04.24-21.03.39:657][  0]SourceControl: Source control is disabled
-[2019.04.24-21.03.39:657][  0]SourceControl: Source control is disabled
-[2019.04.24-21.03.39:695][  0]SourceControl: Source control is disabled
-[2019.04.24-21.03.39:716][  0]SourceControl: Source control is disabled
-[2019.04.24-21.03.40:450][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2019.04.24-21.03.40:601][  0]LogOcInput: OculusInput pre-init called
-[2019.04.24-21.03.41:368][  0]LogEngine: Initializing Engine...
-[2019.04.24-21.03.41:395][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2019.04.24-21.03.41:403][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
-[2019.04.24-21.03.41:403][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2019.04.24-21.03.41:404][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
-[2019.04.24-21.03.41:404][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2019.04.24-21.03.41:881][  0]LogInit: Initializing FReadOnlyCVARCache
-[2019.04.24-21.03.42:094][  0]LogAIModule: Creating AISystem for world Untitled
-[2019.04.24-21.03.42:153][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 4 channels at 48 kHz using 32 bits per sample (channel mask 0x33)
-[2019.04.24-21.03.42:193][  0]LogInit: FAudioDevice initialized.
-[2019.04.24-21.03.42:193][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2019.04.24-21.03.42:277][  0]LogDerivedDataCache: Saved boot cache 0.08s 71MB C:/Users/Victor/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
-[2019.04.24-21.03.42:278][  0]LogInit: Texture streaming: Enabled
-[2019.04.24-21.03.42:352][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2019.04.24-21.03.42:446][  0]LogInit: Transaction tracking system initialized
-[2019.04.24-21.03.42:670][  0]BlueprintLog: New page: Editor Load
-[2019.04.24-21.03.43:345][  0]LocalizationService: Localization service is disabled
-[2019.04.24-21.03.44:840][  0]LogFileCache: Scanning file cache for directory 'E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/' took 0.02s
-[2019.04.24-21.03.44:840][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2019.04.24-21.03.44:841][  0]LogCook: Display: Mobile HDR setting 1
-[2019.04.24-21.03.44:841][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
-[2019.04.24-21.03.44:841][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
-[2019.04.24-21.03.44:841][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2019.04.24-21.03.44:841][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
-[2019.04.24-21.03.44:841][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2019.04.24-21.03.45:793][  0]SourceControl: Source control is disabled
-[2019.04.24-21.03.45:800][  0]Cmd: MAP LOAD FILE="../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2019.04.24-21.03.45:800][  0]LogEditorServer: Warning: Can't find file '../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap'
-[2019.04.24-21.03.45:801][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2019.04.24-21.03.45:810][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 9,53ms to complete.
-[2019.04.24-21.03.45:810][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.018
-[2019.04.24-21.03.46:719][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.04.24-21.03.46:728][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.04.24-21.03.46:735][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.04.24-21.03.46:742][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.04.24-21.03.46:788][  0]LogCollectionManager: Loaded 0 collections in 0.001549 seconds
-[2019.04.24-21.03.46:869][  0]LogFileCache: Scanning file cache for directory 'E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Collections/' took 0.01s
-[2019.04.24-21.03.46:869][  0]LogFileCache: Scanning file cache for directory 'E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/Developers/Victor/Collections/' took 0.01s
-[2019.04.24-21.03.46:869][  0]LogFileCache: Scanning file cache for directory 'E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/Collections/' took 0.00s
-[2019.04.24-21.03.46:869][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
-[2019.04.24-21.03.46:880][  0]LogContentBrowser: Native class hierarchy populated in 0.0098 seconds. Added 2651 classes and 620 folders.
-[2019.04.24-21.03.46:938][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2019.04.24-21.03.46:990][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.24-21.03.47:016][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.24-21.03.47:023][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.24-21.03.47:033][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.24-21.03.47:043][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.24-21.03.47:055][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.24-21.03.47:056][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.24-21.03.47:057][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.24-21.03.47:066][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.24-21.03.47:077][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.24-21.03.47:090][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.24-21.03.47:097][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.24-21.03.47:098][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.24-21.03.47:104][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.24-21.03.47:105][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.24-21.03.47:106][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.24-21.03.47:107][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.24-21.03.47:110][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.24-21.03.47:111][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.24-21.03.47:113][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.24-21.03.47:117][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.24-21.03.47:118][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.24-21.03.47:125][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.24-21.03.47:132][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.24-21.03.47:142][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.24-21.03.47:144][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.24-21.03.47:761][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2019.04.24-21.03.47:790][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
-[2019.04.24-21.03.48:106][  0]LogSlate: Took 0.012636 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2019.04.24-21.03.48:130][  0]LogSlate: Took 0.016435 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2019.04.24-21.03.48:163][  0]LogSlate: Took 0.005866 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2019.04.24-21.03.48:469][  0]LogRenderer: Reallocating scene render targets to support 1044x652 Format 10 NumSamples 1 (Frame:1).
-[2019.04.24-21.03.48:810][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2019.04.24-21.03.48:810][  0]LogLoad: (Engine Initialization) Total time: 32.98 seconds
-[2019.04.24-21.03.48:810][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2019.04.24-21.03.48:967][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2019.04.24-21.03.49:062][  1]LogAssetRegistry: Asset discovery search completed in 20.9176 seconds
-[2019.04.24-21.03.49:064][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
-[2019.04.24-21.03.49:064][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000075 seconds (updated 0 objects)
-[2019.04.24-21.03.53:058][ 83]LogSlate: Took 0.013255 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2019.04.24-21.04.00:004][602]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.04.00:137][617]LogSlate: Took 0.000225 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2019.04.24-21.04.01:443][617]LogAIModule: Creating AISystem for world Level_4
-[2019.04.24-21.04.01:565][617]LogAssetEditorManager: Opening Asset editor for World /Game/FirstPersonBP/Maps/Level_4.Level_4
-[2019.04.24-21.04.01:663][617]Cmd: MAP LOAD FILE="../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_4.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2019.04.24-21.04.01:663][617]LightingResults: New page: Lighting Build
-[2019.04.24-21.04.01:674][617]LogContentBrowser: Native class hierarchy updated for 'StatsViewer' in 0.0003 seconds. Added 5 classes and 0 folders.
-[2019.04.24-21.04.01:675][617]LoadErrors: New page: Loading map: Level_4.umap
-[2019.04.24-21.04.01:681][617]MapCheck: New page: Map Check
-[2019.04.24-21.04.01:681][617]LightingResults: New page: Lighting Build
-[2019.04.24-21.04.01:966][617]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2019.04.24-21.04.02:037][617]Cmd: MAP CHECKDEP NOCLEARLOG
-[2019.04.24-21.04.02:037][617]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,128ms to complete.
-[2019.04.24-21.04.02:037][617]LogFileHelpers: Loading map 'Level_4' took 0.379
-[2019.04.24-21.04.14:407][ 12]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.04.14:609][ 19]LogActorFactory: Actor Factory created stone_02
-[2019.04.24-21.04.15:485][103]LogActorFactory: Actor Factory created stone_02
-[2019.04.24-21.04.30:788][839]Cmd: DELETE
-[2019.04.24-21.04.30:788][839]Cmd: ACTOR DELETE
-[2019.04.24-21.04.30:900][839]LogEditorActor: Deleted Actor: StaticMeshActor
-[2019.04.24-21.04.30:942][839]LogEditorActor: Deleted 1 Actors (0.081 secs)
-[2019.04.24-21.04.32:866][ 52]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.04.33:086][ 75]LogActorFactory: Actor Factory created Mushroom
-[2019.04.24-21.04.35:463][354]LogActorFactory: Actor Factory created Mushroom
-[2019.04.24-21.05.11:142][493]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.05.11:728][499]LogActorFactory: Actor Factory created wall01
-[2019.04.24-21.05.12:350][567]LogActorFactory: Actor Factory created wall01
-[2019.04.24-21.05.32:420][870]Cmd: TRANSACTION UNDO
-[2019.04.24-21.05.32:445][870]LogEditorTransaction: Undo Scale Actors
-[2019.04.24-21.05.48:322][642]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2019.04.24-21.05.49:371][758]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (wall2)
-[2019.04.24-21.05.54:779][392]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2019.04.24-21.05.55:573][482]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (wall2)
-[2019.04.24-21.05.59:117][898]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2019.04.24-21.06.07:458][855]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.06.07:619][872]LogActorFactory: Actor Factory created stone_02
-[2019.04.24-21.06.08:623][967]LogActorFactory: Actor Factory created stone_02
-[2019.04.24-21.06.51:342][853]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (stone_02)
-[2019.04.24-21.06.55:185][297]Cmd: TRANSACTION UNDO
-[2019.04.24-21.06.55:185][297]LogEditorTransaction: Undo Move Actors
-[2019.04.24-21.07.06:041][530]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone_4)
-[2019.04.24-21.07.09:024][878]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone_5)
-[2019.04.24-21.07.38:457][237]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.07.38:656][259]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.07.39:938][393]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.07.58:755][485]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone_3)
-[2019.04.24-21.08.05:554][219]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone_02)
-[2019.04.24-21.08.49:197][423]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.08.49:430][449]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.08.50:519][558]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.11.33:761][502]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2019.04.24-21.11.56:285][147]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.11.56:558][178]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.11.57:495][271]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.14.01:625][323]LogSavePackage: Moving '../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Level_4_Auto18EED05044CC3C0BA3D72C58F807A0763.tmp' to '../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Autosaves/Game/FirstPersonBP/Maps/Level_4_Auto1.umap'
-[2019.04.24-21.14.01:648][323]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonBP/Maps/Level_4' took 1.254
-[2019.04.24-21.14.01:648][323]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.254
-[2019.04.24-21.14.09:246][117]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.14.09:444][139]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.14.10:358][219]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.14.20:539][355]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.14.20:741][377]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.14.22:122][526]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.14.35:191][ 16]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.14.35:383][ 37]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.14.37:197][231]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.14.50:126][720]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.14.50:337][742]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.14.51:452][841]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.15.30:286][296]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.15.30:510][321]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.15.32:174][495]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.16.30:617][226]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.16.30:813][248]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.16.31:818][350]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.16.44:337][798]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.16.44:554][822]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.16.45:339][898]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.16.56:458][195]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.16.56:650][216]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.16.58:447][408]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.17.23:822][385]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.17.24:047][410]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.17.25:450][559]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.17.25:951][610]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.18.17:855][611]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2019.04.24-21.18.29:066][925]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.18.29:274][948]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.18.30:496][ 69]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.18.50:709][380]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.18.50:902][401]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.18.51:628][478]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.19.00:821][432]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone30)
-[2019.04.24-21.19.09:038][390]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.19.09:230][411]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.19.10:465][539]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.19.24:243][128]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.19.24:447][151]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.19.25:290][226]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.20.07:076][388]Cmd: DELETE
-[2019.04.24-21.20.07:076][388]Cmd: ACTOR DELETE
-[2019.04.24-21.20.07:103][388]LogEditorActor: Deleted Actor: StaticMeshActor
-[2019.04.24-21.20.07:559][388]LogEditorActor: Deleted 1 Actors (0.483 secs)
-[2019.04.24-21.20.11:163][780]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Torch28)
-[2019.04.24-21.20.28:080][680]Cmd: DELETE
-[2019.04.24-21.20.28:080][680]Cmd: ACTOR DELETE
-[2019.04.24-21.20.28:105][680]LogEditorActor: Deleted Actor: StaticMeshActor
-[2019.04.24-21.20.28:132][680]LogEditorActor: Deleted 1 Actors (0.053 secs)
-[2019.04.24-21.20.30:971][  6]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2019.04.24-21.20.31:616][  6]LogSavePackage: Moving '../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Level_474E8BA8644BDADC7F9AAB9A8EDC48418.tmp' to '../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_4.umap'
-[2019.04.24-21.20.34:786][343]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.20.35:053][374]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.20.35:874][461]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.21.17:869][338]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.21.18:117][366]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.21.20:250][584]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.21.32:937][ 68]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.21.33:145][ 91]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.21.33:963][175]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.22.11:742][483]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.22.12:335][486]LogActorFactory: Actor Factory created Environmental_Rock
-[2019.04.24-21.22.14:416][704]LogActorFactory: Actor Factory created Environmental_Rock
-[2019.04.24-21.22.23:303][682]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2019.04.24-21.22.24:943][855]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Environmental_Rock)
-[2019.04.24-21.23.05:041][506]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.23.05:226][526]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.23.06:474][646]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.23.22:698][521]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.23.22:898][543]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.23.24:082][658]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.23.34:694][869]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.23.34:904][892]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.23.35:749][975]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.23.36:157][ 19]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (stone36)
-[2019.04.24-21.23.36:383][ 19]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2019.04.24-21.23.38:340][210]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Torch34)
-[2019.04.24-21.24.38:963][158]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Torch31)
-[2019.04.24-21.27.04:533][368]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.27.04:703][386]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.27.06:196][546]LogActorFactory: Actor Factory created Torch
-[2019.04.24-21.30.23:877][460]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (DoorWay_FIXED)
-[2019.04.24-21.30.27:725][910]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Torch39)
-[2019.04.24-21.31.07:305][404]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Torch37)
-[2019.04.24-21.31.48:038][217]LogSavePackage: Moving '../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Level_4_Auto27520D1B549FA5D66C618349CC51AE65E.tmp' to '../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Autosaves/Game/FirstPersonBP/Maps/Level_4_Auto2.umap'
-[2019.04.24-21.31.48:040][217]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonBP/Maps/Level_4' took 1.066
-[2019.04.24-21.31.48:040][217]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.066
-[2019.04.24-21.34.52:978][539]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2019.04.24-21.34.53:590][539]LogSavePackage: Moving '../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Level_49B7363AA49D0B94109D08EA9C22A8668.tmp' to '../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_4.umap'
-[2019.04.24-21.36.41:044][706]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2019.04.24-21.36.41:044][706]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2019.04.24-21.39.23:414][ 15]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2019.04.24-21.39.23:414][ 15]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2019.04.24-21.39.26:412][329]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone229)
-[2019.04.24-21.39.53:824][567]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2019.04.24-21.40.50:369][504]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.40.50:613][531]LogActorFactory: Actor Factory created swinging_axe01_swinging_axe01
-[2019.04.24-21.40.51:665][630]LogActorFactory: Actor Factory created swinging_axe01_swinging_axe01
-[2019.04.24-21.40.57:064][253]Cmd: TRANSACTION UNDO
-[2019.04.24-21.40.57:064][253]LogEditorTransaction: Undo Scale Actors
-[2019.04.24-21.41.12:249][ 36]Cmd: TRANSACTION UNDO
-[2019.04.24-21.41.12:249][ 36]LogEditorTransaction: Undo Move Actors
-[2019.04.24-21.41.13:116][125]Cmd: TRANSACTION UNDO
-[2019.04.24-21.41.13:116][125]LogEditorTransaction: Undo Scale Actors
-[2019.04.24-21.41.15:096][359]Cmd: DELETE
-[2019.04.24-21.41.15:096][359]Cmd: ACTOR DELETE
-[2019.04.24-21.41.15:122][359]LogEditorActor: Deleted Actor: StaticMeshActor
-[2019.04.24-21.41.15:148][359]LogEditorActor: Deleted 1 Actors (0.052 secs)
-[2019.04.24-21.41.33:535][519]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.41.48:309][271]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.42.00:033][640]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.44.53:938][114]LogSavePackage: Moving '../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Level_4_Auto35E1A446D40094060B60C45A9E46B8A19.tmp' to '../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Autosaves/Game/FirstPersonBP/Maps/Level_4_Auto3.umap'
-[2019.04.24-21.44.53:946][114]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonBP/Maps/Level_4' took 1.108
-[2019.04.24-21.44.53:946][114]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.108
-[2019.04.24-21.45.29:589][ 20]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.45.29:747][ 36]LogActorFactory: Actor Factory created Pillar_1
-[2019.04.24-21.45.30:641][132]LogActorFactory: Actor Factory created Pillar_1
-[2019.04.24-21.46.20:606][869]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Pillar_1)
-[2019.04.24-21.46.21:475][967]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Pillar_2)
-[2019.04.24-21.46.25:970][491]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Pillar_3)
-[2019.04.24-21.46.27:008][610]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Pillar_2)
-[2019.04.24-21.46.27:872][708]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Pillar_1)
-[2019.04.24-21.47.10:440][697]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.47.10:610][716]LogActorFactory: Actor Factory created stone01
-[2019.04.24-21.47.11:701][822]LogActorFactory: Actor Factory created stone01
-[2019.04.24-21.47.46:353][830]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (stone241)
-[2019.04.24-21.47.46:928][893]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (stone240)
-[2019.04.24-21.47.47:385][942]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (stone239)
-[2019.04.24-21.47.59:221][342]Cmd: DELETE
-[2019.04.24-21.47.59:221][342]Cmd: ACTOR DELETE
-[2019.04.24-21.47.59:249][342]LogEditorActor: Deleted Actor: StaticMeshActor
-[2019.04.24-21.47.59:249][342]LogEditorActor: Deleted Actor: StaticMeshActor
-[2019.04.24-21.47.59:250][342]LogEditorActor: Deleted Actor: StaticMeshActor
-[2019.04.24-21.47.59:276][342]LogEditorActor: Deleted 3 Actors (0.055 secs)
-[2019.04.24-21.49.33:891][643]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.49.36:043][805]LogTexture: Display: Building textures: Texture2D_2 (G8, 128X128)
-[2019.04.24-21.49.57:275][310]LogEditorViewport: Clicking on Actor (double click): Landscape (Landscape)
-[2019.04.24-21.50.01:061][757]Cmd: TRANSACTION UNDO
-[2019.04.24-21.50.01:062][757]LogEditorTransaction: Undo Landscape Editing: Sculpt
-[2019.04.24-21.50.01:142][757]LogTexture: Display: Building textures: Texture2D_0 (BGRA8, 512X512)
-[2019.04.24-21.50.01:821][827]Cmd: TRANSACTION UNDO
-[2019.04.24-21.50.01:822][827]LogEditorTransaction: Undo Clicking on Actors (double-click)
-[2019.04.24-21.50.07:790][538]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2019.04.24-21.50.15:328][436]LogEditorViewport: Clicking on Actor (double click): Landscape (Landscape)
-[2019.04.24-21.50.26:017][680]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2019.04.24-21.50.30:583][213]Cmd: TRANSACTION UNDO
-[2019.04.24-21.50.30:583][213]LogEditorTransaction: Undo Landscape Editing: Flatten
-[2019.04.24-21.50.30:610][213]LogTexture: Display: Building textures: Texture2D_0 (BGRA8, 512X512)
-[2019.04.24-21.50.31:817][343]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2019.04.24-21.50.36:713][925]Cmd: TRANSACTION UNDO
-[2019.04.24-21.50.36:713][925]LogEditorTransaction: Undo Landscape Editing: Sculpt
-[2019.04.24-21.51.24:766][510]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.51.42:743][654]LogEditorViewport: Clicking on Actor (double click): Landscape (Landscape)
-[2019.04.24-21.51.46:825][138]Cmd: TRANSACTION UNDO
-[2019.04.24-21.51.46:826][138]LogEditorTransaction: Undo Landscape Editing: Sculpt
-[2019.04.24-21.51.46:856][138]LogTexture: Display: Building textures: Texture2D_0 (BGRA8, 512X512)
-[2019.04.24-21.51.48:169][284]Cmd: TRANSACTION UNDO
-[2019.04.24-21.51.48:169][284]LogEditorTransaction: Undo Clicking on Actors (double-click)
-[2019.04.24-21.51.57:955][420]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.51.58:863][526]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Pillar_1)
-[2019.04.24-21.52.08:629][673]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Pillar_13)
-[2019.04.24-21.52.20:104][ 19]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.52.32:188][447]Cmd: TRANSACTION UNDO
-[2019.04.24-21.52.32:188][447]LogEditorTransaction: Undo Landscape Editing: Noise
-[2019.04.24-21.52.32:216][447]LogTexture: Display: Building textures: Texture2D_0 (BGRA8, 512X512)
-[2019.04.24-21.52.35:270][801]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.52.56:588][278]Cmd: TRANSACTION UNDO
-[2019.04.24-21.52.56:588][278]LogEditorTransaction: Undo Landscape Editing: Smooth
-[2019.04.24-21.52.56:616][278]LogTexture: Display: Building textures: Texture2D_0 (BGRA8, 512X512)
-[2019.04.24-21.52.57:100][325]Cmd: TRANSACTION UNDO
-[2019.04.24-21.52.57:100][325]LogEditorTransaction: Undo Landscape Editing: Smooth
-[2019.04.24-21.52.57:127][325]LogTexture: Display: Building textures: Texture2D_0 (BGRA8, 512X512)
-[2019.04.24-21.52.58:478][482]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2019.04.24-21.53.05:056][250]Cmd: TRANSACTION UNDO
-[2019.04.24-21.53.05:056][250]LogEditorTransaction: Undo Landscape Editing: Flatten
-[2019.04.24-21.53.10:415][846]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.53.13:020][148]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.54.07:367][611]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.54.27:061][942]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.54.28:128][ 63]LogActorFactory: Actor Factory created stalactite
-[2019.04.24-21.54.29:005][158]LogActorFactory: Actor Factory created stalactite
-[2019.04.24-21.54.53:045][971]Cmd: TRANSACTION UNDO
-[2019.04.24-21.54.53:045][971]LogEditorTransaction: Undo Move Actors
-[2019.04.24-21.54.55:017][184]Cmd: TRANSACTION UNDO
-[2019.04.24-21.54.55:017][184]LogEditorTransaction: Undo Move Actors
-[2019.04.24-21.54.55:911][286]Cmd: TRANSACTION UNDO
-[2019.04.24-21.54.55:911][286]LogEditorTransaction: Undo Move Actors
-[2019.04.24-21.54.56:957][410]Cmd: TRANSACTION UNDO
-[2019.04.24-21.54.56:957][410]LogEditorTransaction: Undo Move Actors
-[2019.04.24-21.54.57:783][507]Cmd: TRANSACTION UNDO
-[2019.04.24-21.54.57:783][507]LogEditorTransaction: Undo Move Actors
-[2019.04.24-21.55.43:235][715]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stalactite42)
-[2019.04.24-21.56.29:789][ 93]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stalactite70)
-[2019.04.24-21.57.15:301][442]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.57.15:666][484]LogActorFactory: Actor Factory created stone01
-[2019.04.24-21.57.16:324][548]LogActorFactory: Actor Factory created stone01
-[2019.04.24-21.58.11:569][942]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (stone242)
-[2019.04.24-21.58.11:971][973]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (stone241)
-[2019.04.24-21.58.12:519][ 32]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (stone240)
-[2019.04.24-21.58.12:949][ 77]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (stone239)
-[2019.04.24-21.58.55:412][836]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-21.58.55:541][850]LogActorFactory: Actor Factory created stone01
-[2019.04.24-21.58.56:288][910]LogActorFactory: Actor Factory created stone01
-[2019.04.24-22.00.36:030][165]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-22.00.37:605][336]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-22.00.37:797][357]LogActorFactory: Actor Factory created Pillar_1
-[2019.04.24-22.00.39:166][504]LogActorFactory: Actor Factory created Pillar_1
-[2019.04.24-22.01.48:317][398]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-22.01.48:376][405]LogTemp: Repeating last play command: Selected Viewport
-[2019.04.24-22.01.48:844][405]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/Level_4.Level_4:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/Level_4.Level_4:PersistentLevel.Level_4' with GeneratedClass '/Game/FirstPersonBP/Maps/Level_4.Level_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/Level_4.Level_4:PersistentLevel.Level_4'
-[2019.04.24-22.01.48:863][405]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2019.04.24-22.01.48:889][405]PIE: New page: PIE session: Level_4 (25.04.2019 г., 4:01:48)
-[2019.04.24-22.01.49:007][405]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_Level_4
-[2019.04.24-22.01.49:073][405]LogPlayLevel: PIE: StaticDuplicateObject took: (0.065460s)
-[2019.04.24-22.01.49:074][405]LogAIModule: Creating AISystem for world Level_4
-[2019.04.24-22.01.49:081][405]LogPlayLevel: PIE: World Init took: (0.008214s)
-[2019.04.24-22.01.49:081][405]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/Level_4.Level_4 to /Game/FirstPersonBP/Maps/UEDPIE_0_Level_4.Level_4 (0.074297s)
-[2019.04.24-22.01.49:127][405]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 4 channels at 48 kHz using 32 bits per sample (channel mask 0x33)
-[2019.04.24-22.01.49:142][405]LogInit: FAudioDevice initialized.
-[2019.04.24-22.01.50:586][405]LogLoad: Game class is 'FirstPersonGameMode_C'
-[2019.04.24-22.01.50:675][405]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_Level_4.Level_4 up for play (max tick rate 0) at 2019.04.25-01.01.50
-[2019.04.24-22.01.50:703][405]LogWorld: Bringing up level for play took: 0.049726
-[2019.04.24-22.01.50:817][405]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0016 seconds. Added 20 classes and 0 folders.
-[2019.04.24-22.01.50:906][405]PIE: Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_Level_4 1,258
-[2019.04.24-22.01.50:906][405]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/Level_4.Level_4:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/Level_4.Level_4:PersistentLevel.Level_4' with GeneratedClass '/Game/FirstPersonBP/Maps/Level_4.Level_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/Level_4.Level_4:PersistentLevel.Level_4'
-[2019.04.24-22.02.03:493][878]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/Level_4.Level_4:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/Level_4.Level_4:PersistentLevel.Level_4' with GeneratedClass '/Game/FirstPersonBP/Maps/Level_4.Level_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/Level_4.Level_4:PersistentLevel.Level_4'
-[2019.04.24-22.02.03:524][878]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.04.24-22.02.03:613][878]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2019.04.24-22.02.03:624][878]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/Level_4.Level_4:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/Level_4.Level_4:PersistentLevel.Level_4' with GeneratedClass '/Game/FirstPersonBP/Maps/Level_4.Level_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/Level_4.Level_4:PersistentLevel.Level_4'
-[2019.04.24-22.02.03:666][878]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.04.24-22.02.03:775][879]LogPlayLevel: Display: Destroying online subsystem :Context_3
-[2019.04.24-22.02.15:461][243]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-22.02.15:673][267]LogActorFactory: Actor Factory created wall01
-[2019.04.24-22.02.17:655][489]LogActorFactory: Actor Factory created wall01
-[2019.04.24-22.02.22:013][968]Cmd: DELETE
-[2019.04.24-22.02.22:013][968]Cmd: ACTOR DELETE
-[2019.04.24-22.02.22:054][968]LogEditorActor: Deleted Actor: StaticMeshActor
-[2019.04.24-22.02.22:081][968]LogEditorActor: Deleted 1 Actors (0.056 secs)
-[2019.04.24-22.02.26:910][535]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-22.02.27:124][559]LogActorFactory: Actor Factory created wall01
-[2019.04.24-22.02.27:950][655]LogActorFactory: Actor Factory created wall01
-[2019.04.24-22.02.35:381][535]Cmd: TRANSACTION UNDO
-[2019.04.24-22.02.35:381][535]LogEditorTransaction: Undo Scale Actors
-[2019.04.24-22.02.39:720][ 32]Cmd: DELETE
-[2019.04.24-22.02.39:720][ 32]Cmd: ACTOR DELETE
-[2019.04.24-22.02.39:750][ 32]LogEditorActor: Deleted Actor: StaticMeshActor
-[2019.04.24-22.02.39:776][ 32]LogEditorActor: Deleted 1 Actors (0.056 secs)
-[2019.04.24-22.02.44:333][568]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-22.02.46:381][805]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-22.02.46:597][829]LogActorFactory: Actor Factory created tile_01
-[2019.04.24-22.02.47:286][904]LogActorFactory: Actor Factory created tile_01
-[2019.04.24-22.02.52:812][538]Cmd: DELETE
-[2019.04.24-22.02.52:812][538]Cmd: ACTOR DELETE
-[2019.04.24-22.02.52:841][538]LogEditorActor: Deleted Actor: StaticMeshActor
-[2019.04.24-22.02.52:868][538]LogEditorActor: Deleted 1 Actors (0.056 secs)
-[2019.04.24-22.03.22:200][ 32]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Pillar_16)
-[2019.04.24-22.03.24:149][258]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Pillar_15)
-[2019.04.24-22.03.25:074][363]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Pillar_17)
-[2019.04.24-22.03.25:954][463]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Pillar_18)
-[2019.04.24-22.03.26:736][551]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2019.04.24-22.04.27:247][967]LogTexture: Display: Building textures: Texture2D_0 (BGRA8, 512X512)
-[2019.04.24-22.04.27:819][967]LogSavePackage: Moving '../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Level_4_Auto4AA960C5149810325A4E3EABA9EEBD23B.tmp' to '../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Autosaves/Game/FirstPersonBP/Maps/Level_4_Auto4.umap'
-[2019.04.24-22.04.27:822][967]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonBP/Maps/Level_4' took 0.812
-[2019.04.24-22.04.27:822][967]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.812
-[2019.04.24-22.05.36:044][393]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (DoorWay_FIXED)
-[2019.04.24-22.05.40:260][857]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-22.05.40:473][878]LogActorFactory: Actor Factory created wall01
-[2019.04.24-22.05.41:372][961]LogActorFactory: Actor Factory created wall01
-[2019.04.24-22.05.48:014][717]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (DoorWay_FIXED)
-[2019.04.24-22.05.51:973][157]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (wall3)
-[2019.04.24-22.06.33:066][980]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2019.04.24-22.06.45:597][449]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (wall5)
-[2019.04.24-22.06.50:908][ 74]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2019.04.24-22.06.53:942][396]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (wall3)
-[2019.04.24-22.06.54:703][479]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (wall4)
-[2019.04.24-22.06.55:278][542]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (wall5)
-[2019.04.24-22.06.58:621][909]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (wall4)
-[2019.04.24-22.06.59:965][ 63]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (wall3)
-[2019.04.24-22.07.07:808][926]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-22.07.54:121][240]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (DoorWay_FIXED)
-[2019.04.24-22.08.05:879][613]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-22.08.06:508][679]LogActorFactory: Actor Factory created Skull
-[2019.04.24-22.08.07:703][797]LogActorFactory: Actor Factory created Skull
-[2019.04.24-22.08.16:794][819]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2019.04.24-22.08.21:293][287]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Skull)
-[2019.04.24-22.08.45:183][ 62]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (wall4)
-[2019.04.24-22.08.46:522][216]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (wall7)
-[2019.04.24-22.08.47:778][360]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
-[2019.04.24-22.08.50:477][649]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.04.24-22.08.50:535][656]LogTemp: Repeating last play command: Selected Viewport
-[2019.04.24-22.08.50:545][656]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/Level_4.Level_4:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/Level_4.Level_4:PersistentLevel.Level_4' with GeneratedClass '/Game/FirstPersonBP/Maps/Level_4.Level_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/Level_4.Level_4:PersistentLevel.Level_4'
-[2019.04.24-22.08.50:545][656]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2019.04.24-22.08.50:545][656]PIE: New page: PIE session: Level_4 (25.04.2019 г., 4:08:50)
-[2019.04.24-22.08.50:545][656]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_Level_4
-[2019.04.24-22.08.50:601][656]LogPlayLevel: PIE: StaticDuplicateObject took: (0.055988s)
-[2019.04.24-22.08.50:601][656]LogAIModule: Creating AISystem for world Level_4
-[2019.04.24-22.08.50:602][656]LogPlayLevel: PIE: World Init took: (0.000619s)
-[2019.04.24-22.08.50:602][656]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/Level_4.Level_4 to /Game/FirstPersonBP/Maps/UEDPIE_0_Level_4.Level_4 (0.056832s)
-[2019.04.24-22.08.50:638][656]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 4 channels at 48 kHz using 32 bits per sample (channel mask 0x33)
-[2019.04.24-22.08.50:652][656]LogInit: FAudioDevice initialized.
-[2019.04.24-22.08.50:683][656]LogLoad: Game class is 'FirstPersonGameMode_C'
-[2019.04.24-22.08.50:696][656]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_Level_4.Level_4 up for play (max tick rate 0) at 2019.04.25-01.08.50
-[2019.04.24-22.08.50:696][656]LogWorld: Bringing up level for play took: 0.013104
-[2019.04.24-22.08.50:711][656]PIE: Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_Level_4 1,071
-[2019.04.24-22.08.50:711][656]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/Level_4.Level_4:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/Level_4.Level_4:PersistentLevel.Level_4' with GeneratedClass '/Game/FirstPersonBP/Maps/Level_4.Level_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/Level_4.Level_4:PersistentLevel.Level_4'
-[2019.04.24-22.09.00:973][883]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/Level_4.Level_4:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/Level_4.Level_4:PersistentLevel.Level_4' with GeneratedClass '/Game/FirstPersonBP/Maps/Level_4.Level_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/Level_4.Level_4:PersistentLevel.Level_4'
-[2019.04.24-22.09.00:973][883]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.04.24-22.09.01:010][883]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2019.04.24-22.09.01:010][883]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/Level_4.Level_4:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/Level_4.Level_4:PersistentLevel.Level_4' with GeneratedClass '/Game/FirstPersonBP/Maps/Level_4.Level_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/Level_4.Level_4:PersistentLevel.Level_4'
-[2019.04.24-22.09.01:042][883]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.04.24-22.09.01:076][885]LogPlayLevel: Display: Destroying online subsystem :Context_4
-[2019.04.24-22.09.43:513][862]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-08.25.11:748][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2019.05.01-08.25.11:748][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2019.05.01-08.25.11:748][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Engine.ini]
+[2019.05.01-08.25.11:748][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2019.05.01-08.25.11:748][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Engine.ini]
+[2019.05.01-08.25.11:748][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Engine.ini]
+[2019.05.01-08.25.11:748][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2019.05.01-08.25.11:748][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2019.05.01-08.25.11:749][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2019.05.01-08.25.11:749][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2019.05.01-08.25.11:749][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2019.05.01-08.25.11:749][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2019.05.01-08.25.11:749][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2019.05.01-08.25.11:749][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2019.05.01-08.25.11:749][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2019.05.01-08.25.11:749][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2019.05.01-08.25.11:749][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2019.05.01-08.25.11:749][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2019.05.01-08.25.11:749][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2019.05.01-08.25.11:749][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Engine.ini]
+[2019.05.01-08.25.11:749][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2019.05.01-08.25.11:749][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2019.05.01-08.25.11:749][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2019.05.01-08.25.11:749][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2019.05.01-08.25.11:749][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2019.05.01-08.25.11:749][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2019.05.01-08.25.11:749][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:8388607]]
+[2019.05.01-08.25.11:749][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2019.05.01-08.25.11:749][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2019.05.01-08.25.11:749][  0]LogConfig: Setting CVar [[gc.MergeGCClusters:0]]
+[2019.05.01-08.25.11:749][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2019.05.01-08.25.11:749][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2019.05.01-08.25.11:749][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2019.05.01-08.25.11:749][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2019.05.01-08.25.11:749][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Engine.ini]
+[2019.05.01-08.25.11:749][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Engine.ini]
+[2019.05.01-08.25.11:761][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
+[2019.05.01-08.25.11:761][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.05.01-08.25.11:761][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.05.01-08.25.11:761][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
+[2019.05.01-08.25.11:761][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2019.05.01-08.25.11:761][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
+[2019.05.01-08.25.11:761][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.05.01-08.25.11:761][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.05.01-08.25.11:761][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.05.01-08.25.11:761][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.05.01-08.25.11:761][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.05.01-08.25.11:761][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.05.01-08.25.11:761][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.05.01-08.25.11:761][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.05.01-08.25.11:761][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.05.01-08.25.11:761][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.05.01-08.25.11:761][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.05.01-08.25.11:761][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.05.01-08.25.11:761][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.05.01-08.25.11:761][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.05.01-08.25.11:762][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.05.01-08.25.11:762][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.05.01-08.25.11:762][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.05.01-08.25.11:762][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.05.01-08.25.11:762][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
+[2019.05.01-08.25.11:762][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2019.05.01-08.25.11:762][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.05.01-08.25.11:762][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.05.01-08.25.11:762][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2019.05.01-08.25.11:762][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.05.01-08.25.11:762][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2019.05.01-08.25.11:762][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.05.01-08.25.11:762][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2019.05.01-08.25.11:762][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2019.05.01-08.25.11:762][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.05.01-08.25.11:762][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2019.05.01-08.25.11:762][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2019.05.01-08.25.11:762][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.05.01-08.25.11:762][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.05.01-08.25.11:762][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.05.01-08.25.11:762][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.05.01-08.25.11:762][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.05.01-08.25.11:762][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.05.01-08.25.11:762][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.05.01-08.25.11:762][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.05.01-08.25.11:762][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.05.01-08.25.11:762][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.05.01-08.25.11:762][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.05.01-08.25.11:762][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.05.01-08.25.11:762][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.05.01-08.25.11:762][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.05.01-08.25.11:762][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.05.01-08.25.11:763][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.05.01-08.25.11:763][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.05.01-08.25.11:763][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.05.01-08.25.11:763][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
+[2019.05.01-08.25.11:763][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.05.01-08.25.11:763][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.05.01-08.25.11:763][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.05.01-08.25.11:763][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.05.01-08.25.11:763][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.05.01-08.25.11:763][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.05.01-08.25.11:763][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.05.01-08.25.11:763][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.05.01-08.25.11:763][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
+[2019.05.01-08.25.11:763][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2019.05.01-08.25.11:763][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.05.01-08.25.11:763][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2019.05.01-08.25.11:763][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2019.05.01-08.25.11:763][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.05.01-08.25.11:763][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2019.05.01-08.25.11:763][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.05.01-08.25.11:763][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.05.01-08.25.11:763][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.05.01-08.25.11:763][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.05.01-08.25.11:763][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.05.01-08.25.11:763][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.05.01-08.25.11:763][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.05.01-08.25.11:763][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
+[2019.05.01-08.25.11:763][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.05.01-08.25.11:763][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.05.01-08.25.11:764][  0]LogInit: Selected Device Profile: [Windows]
+[2019.05.01-08.25.11:764][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2019.05.01-08.25.11:801][  0]LogHAL: Display: Platform has ~ 32 GB [34212487168 / 34359738368 / 32], which maps to Largest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2019.05.01-08.25.11:801][  0]LogConfig: Setting CVar [[r.Vulkan.UseRealUBs:1]]
+[2019.05.01-08.25.11:801][  0]LogInit: Going up to parent DeviceProfile []
+[2019.05.01-08.25.11:801][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.05.01-08.25.11:802][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.05.01-08.25.11:803][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.05.01-08.25.11:803][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.05.01-08.25.11:803][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.05.01-08.25.11:803][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
+[2019.05.01-08.25.11:803][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.05.01-08.25.11:803][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.05.01-08.25.11:803][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.05.01-08.25.11:803][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.05.01-08.25.11:803][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.05.01-08.25.11:803][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.05.01-08.25.11:803][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.05.01-08.25.11:803][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.05.01-08.25.11:803][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
+[2019.05.01-08.25.11:803][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2019.05.01-08.25.11:803][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.05.01-08.25.11:803][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2019.05.01-08.25.11:803][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2019.05.01-08.25.11:803][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.05.01-08.25.11:803][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2019.05.01-08.25.11:803][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.05.01-08.25.11:803][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.05.01-08.25.11:803][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.05.01-08.25.11:803][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.05.01-08.25.11:803][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.05.01-08.25.11:803][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.05.01-08.25.11:803][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.05.01-08.25.11:803][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
+[2019.05.01-08.25.11:803][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.05.01-08.25.11:803][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.05.01-08.25.11:803][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2019.05.01-08.25.11:803][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2019.05.01-08.25.11:803][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Engine.ini]
+[2019.05.01-08.25.11:803][  0]LogInit: Computer: DESKTOP-JIKF00M
+[2019.05.01-08.25.11:803][  0]LogInit: User: Games
+[2019.05.01-08.25.11:803][  0]LogInit: CPU Page size=4096, Cores=4
+[2019.05.01-08.25.11:803][  0]LogInit: High frequency timer resolution =3.410073 MHz
+[2019.05.01-08.25.11:803][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
+[2019.05.01-08.25.11:803][  0]LogMemory: Platform Memory Stats for Windows
+[2019.05.01-08.25.11:803][  0]LogMemory: Process Physical Memory: 101.98 MB used, 101.98 MB peak
+[2019.05.01-08.25.11:803][  0]LogMemory: Process Virtual Memory: 91.38 MB used, 91.38 MB peak
+[2019.05.01-08.25.11:803][  0]LogMemory: Physical Memory: 6224.82 MB used,  26402.75 MB free, 32627.57 MB total
+[2019.05.01-08.25.11:803][  0]LogMemory: Virtual Memory: 4647.84 MB used,  134213080.00 MB free, 134217728.00 MB total
+[2019.05.01-08.25.11:836][  0]LogInit: Using OS detected language (en-US).
+[2019.05.01-08.25.11:836][  0]LogInit: Using OS detected locale (en-GB).
+[2019.05.01-08.25.11:837][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2019.05.01-08.25.12:207][  0]LogStreaming: Display: Took  0.372s to InitEngineTextLocalization.
+[2019.05.01-08.25.12:208][  0]LogInit: Setting process to per monitor DPI aware
+[2019.05.01-08.25.12:250][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2019.05.01-08.25.12:251][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2019.05.01-08.25.12:428][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.05.01-08.25.12:428][  0]LogD3D11RHI: D3D11 adapters:
+[2019.05.01-08.25.12:487][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
+[2019.05.01-08.25.12:487][  0]LogD3D11RHI:       4043/0/16313 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2019.05.01-08.25.12:489][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2019.05.01-08.25.12:489][  0]LogD3D11RHI:       0/0/16313 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2019.05.01-08.25.12:489][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2019.05.01-08.25.12:494][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2019.05.01-08.25.12:494][  0]LogD3D11RHI:     GPU DeviceId: 0x13c2 (for the marketing name, search the web for "GPU Device Id")
+[2019.05.01-08.25.12:494][  0]LogWindows: EnumDisplayDevices:
+[2019.05.01-08.25.12:494][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970' (P:1 D:1)
+[2019.05.01-08.25.12:494][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970' (P:0 D:1)
+[2019.05.01-08.25.12:494][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2019.05.01-08.25.12:495][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2019.05.01-08.25.12:495][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2019.05.01-08.25.12:495][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
+[2019.05.01-08.25.12:495][  0]LogD3D11RHI:   Driver Version: 417.35 (internal:25.21.14.1735, unified:417.35)
+[2019.05.01-08.25.12:495][  0]LogD3D11RHI:      Driver Date: 12-11-2018
+[2019.05.01-08.25.12:495][  0]LogRHI: Texture pool is 2830 MB (70% of 4043 MB)
+[2019.05.01-08.25.12:539][  0]LogD3D11RHI: Async texture creation enabled
+[2019.05.01-08.25.12:556][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2019.05.01-08.25.12:949][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2019.05.01-08.25.12:962][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2019.05.01-08.25.12:974][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2019.05.01-08.25.12:987][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2019.05.01-08.25.12:999][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2019.05.01-08.25.13:012][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2019.05.01-08.25.13:024][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2019.05.01-08.25.13:036][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2019.05.01-08.25.13:042][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2019.05.01-08.25.13:112][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.01-08.25.13:112][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.01-08.25.13:112][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.01-08.25.13:112][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.01-08.25.13:112][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.01-08.25.13:112][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.01-08.25.13:112][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.01-08.25.13:112][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.01-08.25.13:112][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.01-08.25.13:112][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.01-08.25.13:112][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.01-08.25.13:112][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.01-08.25.13:112][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.01-08.25.13:112][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.01-08.25.13:112][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.01-08.25.13:112][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.01-08.25.13:112][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.01-08.25.13:112][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.01-08.25.13:114][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2019.05.01-08.25.13:179][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2019.05.01-08.25.13:179][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2019.05.01-08.25.13:209][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2019.05.01-08.25.13:209][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2019.05.01-08.25.13:221][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2019.05.01-08.25.13:233][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2019.05.01-08.25.13:245][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2019.05.01-08.25.13:257][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2019.05.01-08.25.13:319][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
+[2019.05.01-08.25.13:319][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
+[2019.05.01-08.25.13:319][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2019.05.01-08.25.13:389][  0]LogShaderCompilers: Guid format shader working directory is -54 characters bigger than the processId version (../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Intermediate/Shaders/WorkingDirectory/26592/).
+[2019.05.01-08.25.13:389][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Games/AppData/Local/Temp/UnrealShaderWorkingDir/19849D4E41EFA807A1364EAEB22D49AA/'.
+[2019.05.01-08.25.13:392][  0]LogXGEController: Cleaning working directory: C:/Users/Games/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2019.05.01-08.25.13:392][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2019.05.01-08.25.13:392][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2019.05.01-08.25.13:392][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2019.05.01-08.25.13:961][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2019.05.01-08.25.14:017][  0]LogDerivedDataCache: Loaded boot cache 0.06s 71MB C:/Users/Games/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
+[2019.05.01-08.25.14:017][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Games/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc
+[2019.05.01-08.25.14:017][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2019.05.01-08.25.14:017][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2019.05.01-08.25.14:017][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2019.05.01-08.25.14:017][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2019.05.01-08.25.14:033][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2019.05.01-08.25.14:037][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Enterprise/DerivedDataCache/Compressed.ddp.
+[2019.05.01-08.25.14:050][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Games/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2019.05.01-08.25.14:050][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2019.05.01-08.25.14:050][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2019.05.01-08.25.14:095][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2019.05.01-08.25.14:097][  0]LogSlate: Using FreeType 2.6.0
+[2019.05.01-08.25.14:097][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2019.05.01-08.25.14:192][  0]LogAssetRegistry: FAssetRegistry took 0.0343 seconds to start up
+[2019.05.01-08.25.14:518][  0]LogInit: Selected Device Profile: [Windows]
+[2019.05.01-08.25.14:666][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2019.05.01-08.25.14:669][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2019.05.01-08.25.14:669][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2019.05.01-08.25.14:669][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2019.05.01-08.25.14:669][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2019.05.01-08.25.14:681][  0]LogNetVersion: greybox_level_test 1.0.0, NetCL: 4541578, EngineNetVer: 5, GameNetVer: 0 (Checksum: 3484623482)
+[2019.05.01-08.25.15:167][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 2 prioritized culture(s) in 0.102309 seconds
+[2019.05.01-08.25.15:173][  0]LogUObjectArray: 39775 objects as part of root set at end of initial load.
+[2019.05.01-08.25.15:173][  0]LogUObjectAllocator: 6914656 out of 0 bytes used by permanent object pool.
+[2019.05.01-08.25.15:173][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2019.05.01-08.25.15:996][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2019.05.01-08.25.16:011][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2019.05.01-08.25.16:805][  0]SourceControl: Source control is disabled
+[2019.05.01-08.25.16:805][  0]SourceControl: Source control is disabled
+[2019.05.01-08.25.16:807][  0]SourceControl: Source control is disabled
+[2019.05.01-08.25.16:808][  0]SourceControl: Source control is disabled
+[2019.05.01-08.25.16:995][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2019.05.01-08.25.17:078][  0]LogOcInput: OculusInput pre-init called
+[2019.05.01-08.25.17:257][  0]LogEngine: Initializing Engine...
+[2019.05.01-08.25.17:257][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.05.01-08.25.17:258][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2019.05.01-08.25.17:258][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2019.05.01-08.25.17:259][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2019.05.01-08.25.17:259][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2019.05.01-08.25.17:657][  0]LogInit: Initializing FReadOnlyCVARCache
+[2019.05.01-08.25.17:684][  0]LogAIModule: Creating AISystem for world Untitled
+[2019.05.01-08.25.17:693][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2019.05.01-08.25.17:754][  0]LogInit: FAudioDevice initialized.
+[2019.05.01-08.25.17:754][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2019.05.01-08.25.17:899][  0]LogDerivedDataCache: Saved boot cache 0.14s 71MB C:/Users/Games/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
+[2019.05.01-08.25.17:916][  0]LogInit: Texture streaming: Enabled
+[2019.05.01-08.25.17:946][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2019.05.01-08.25.17:971][  0]LogInit: Transaction tracking system initialized
+[2019.05.01-08.25.18:013][  0]BlueprintLog: New page: Editor Load
+[2019.05.01-08.25.18:123][  0]LocalizationService: Localization service is disabled
+[2019.05.01-08.25.18:822][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/' took 0.02s
+[2019.05.01-08.25.18:822][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2019.05.01-08.25.18:822][  0]LogCook: Display: Mobile HDR setting 1
+[2019.05.01-08.25.18:822][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2019.05.01-08.25.18:822][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2019.05.01-08.25.18:822][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2019.05.01-08.25.18:822][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2019.05.01-08.25.18:822][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2019.05.01-08.25.18:969][  0]SourceControl: Source control is disabled
+[2019.05.01-08.25.18:969][  0]LogEditorServer: Warning: Can't find file '../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap'
+[2019.05.01-08.25.18:969][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.05.01-08.25.18:970][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.196ms to complete.
+[2019.05.01-08.25.18:970][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.001
+[2019.05.01-08.25.19:109][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.05.01-08.25.19:117][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.05.01-08.25.19:124][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.05.01-08.25.19:132][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.05.01-08.25.19:138][  0]LogCollectionManager: Loaded 0 collections in 0.001920 seconds
+[2019.05.01-08.25.19:155][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Collections/' took 0.01s
+[2019.05.01-08.25.19:155][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/Developers/Games/Collections/' took 0.00s
+[2019.05.01-08.25.19:155][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/Collections/' took 0.00s
+[2019.05.01-08.25.19:155][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2019.05.01-08.25.19:164][  0]LogContentBrowser: Native class hierarchy populated in 0.0089 seconds. Added 2651 classes and 620 folders.
+[2019.05.01-08.25.19:171][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2019.05.01-08.25.19:172][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.01-08.25.19:173][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.01-08.25.19:173][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.01-08.25.19:174][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.01-08.25.19:174][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.01-08.25.19:175][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.01-08.25.19:175][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.01-08.25.19:175][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.01-08.25.19:176][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.01-08.25.19:176][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.01-08.25.19:177][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.01-08.25.19:177][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.01-08.25.19:178][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.01-08.25.19:178][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.01-08.25.19:179][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.01-08.25.19:179][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.01-08.25.19:179][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.01-08.25.19:181][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.01-08.25.19:182][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.01-08.25.19:183][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.01-08.25.19:184][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.01-08.25.19:185][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.01-08.25.19:186][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.01-08.25.19:187][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.01-08.25.19:188][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.01-08.25.19:190][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.01-08.25.19:191][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.01-08.25.19:192][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.01-08.25.19:234][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2019.05.01-08.25.19:239][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2019.05.01-08.25.19:253][  0]LogSlate: Took 0.000253 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2019.05.01-08.25.19:256][  0]LogSlate: Took 0.000226 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2019.05.01-08.25.19:263][  0]LogSlate: Took 0.000213 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2019.05.01-08.25.19:374][  0]LogRenderer: Reallocating scene render targets to support 1300x696 Format 10 NumSamples 1 (Frame:1).
+[2019.05.01-08.25.19:519][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2019.05.01-08.25.19:519][  0]LogLoad: (Engine Initialization) Total time: 9.75 seconds
+[2019.05.01-08.25.19:519][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2019.05.01-08.25.19:530][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2019.05.01-08.25.19:577][  0]LogAssetRegistry: Asset discovery search completed in 5.4070 seconds
+[2019.05.01-08.25.19:579][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2019.05.01-08.25.19:579][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000052 seconds (updated 0 objects)
+[2019.05.01-08.25.19:581][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2019.05.01-08.25.19:612][  0]LogSlate: Took 0.000209 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.05.01-08.25.23:683][448]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-08.25.23:843][467]LogSlate: Took 0.000174 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.05.01-08.25.25:324][467]LogAIModule: Creating AISystem for world Level_1
+[2019.05.01-08.25.25:385][467]LogAssetEditorManager: Opening Asset editor for World /Game/FirstPersonBP/Maps/Level_1.Level_1
+[2019.05.01-08.25.25:430][467]Cmd: MAP LOAD FILE="../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_1.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.05.01-08.25.25:430][467]LightingResults: New page: Lighting Build
+[2019.05.01-08.25.25:434][467]LogContentBrowser: Native class hierarchy updated for 'StatsViewer' in 0.0004 seconds. Added 5 classes and 0 folders.
+[2019.05.01-08.25.25:435][467]LoadErrors: New page: Loading map: Level_1.umap
+[2019.05.01-08.25.25:435][467]MapCheck: New page: Map Check
+[2019.05.01-08.25.25:435][467]LightingResults: New page: Lighting Build
+[2019.05.01-08.25.26:240][467]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.05.01-08.25.26:325][467]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.05.01-08.25.26:325][467]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.185ms to complete.
+[2019.05.01-08.25.26:325][467]LogFileHelpers: Loading map 'Level_1' took 0.895
+[2019.05.01-08.25.34:870][334]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-08.25.35:183][352]LogAIModule: Creating AISystem for world Level_2
+[2019.05.01-08.25.35:192][352]LogAssetEditorManager: Opening Asset editor for World /Game/FirstPersonBP/Maps/Level_2.Level_2
+[2019.05.01-08.25.35:227][352]Cmd: MAP LOAD FILE="../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_2.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.05.01-08.25.35:227][352]LightingResults: New page: Lighting Build
+[2019.05.01-08.25.35:228][352]LoadErrors: New page: Loading map: Level_2.umap
+[2019.05.01-08.25.35:230][352]MapCheck: New page: Map Check
+[2019.05.01-08.25.35:230][352]LightingResults: New page: Lighting Build
+[2019.05.01-08.25.36:469][352]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.05.01-08.25.36:545][352]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.05.01-08.25.36:545][352]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.205ms to complete.
+[2019.05.01-08.25.36:545][352]LogFileHelpers: Loading map 'Level_2' took 1.319
+[2019.05.01-08.26.47:048][560]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-08.26.48:075][624]LogAIModule: Creating AISystem for world Level_3
+[2019.05.01-08.26.48:173][624]LogAssetEditorManager: Opening Asset editor for World /Game/FirstPersonBP/Maps/Level_3.Level_3
+[2019.05.01-08.26.48:208][624]Cmd: MAP LOAD FILE="../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_3.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.05.01-08.26.48:208][624]LightingResults: New page: Lighting Build
+[2019.05.01-08.26.48:209][624]LoadErrors: New page: Loading map: Level_3.umap
+[2019.05.01-08.26.48:211][624]MapCheck: New page: Map Check
+[2019.05.01-08.26.48:211][624]LightingResults: New page: Lighting Build
+[2019.05.01-08.27.09:846][624]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.05.01-08.27.09:916][624]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.05.01-08.27.09:916][624]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.178ms to complete.
+[2019.05.01-08.27.09:916][624]LogFileHelpers: Loading map 'Level_3' took 21.709
+[2019.05.01-08.27.25:951][397]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-08.27.26:288][416]LogTexture: Display: Building textures: Texture2D_0 (BGRA8, 512X512)
+[2019.05.01-08.27.26:323][416]LogAIModule: Creating AISystem for world Level_4
+[2019.05.01-08.27.26:355][416]LogAssetEditorManager: Opening Asset editor for World /Game/FirstPersonBP/Maps/Level_4.Level_4
+[2019.05.01-08.27.26:385][416]Cmd: MAP LOAD FILE="../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_4.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.05.01-08.27.26:385][416]LightingResults: New page: Lighting Build
+[2019.05.01-08.27.26:386][416]LoadErrors: New page: Loading map: Level_4.umap
+[2019.05.01-08.27.26:394][416]MapCheck: New page: Map Check
+[2019.05.01-08.27.26:394][416]LightingResults: New page: Lighting Build
+[2019.05.01-08.27.26:514][416]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.05.01-08.27.26:579][416]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.05.01-08.27.26:581][416]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 2.094ms to complete.
+[2019.05.01-08.27.26:581][416]LogFileHelpers: Loading map 'Level_4' took 0.197
+[2019.05.01-08.28.25:311][110]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-08.28.25:454][126]LogActorFactory: Actor Factory created wall01
+[2019.05.01-08.28.26:015][191]LogActorFactory: Actor Factory created wall01
+[2019.05.01-08.28.33:163][ 29]Cmd: DELETE
+[2019.05.01-08.28.33:163][ 29]Cmd: ACTOR DELETE
+[2019.05.01-08.28.33:186][ 29]LogEditorActor: Deleted Actor: StaticMeshActor
+[2019.05.01-08.28.33:214][ 29]LogEditorActor: Deleted 1 Actors (0.050 secs)
+[2019.05.01-08.29.14:432][692]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
+[2019.05.01-08.29.14:556][697]LogEditorViewport: Clicking on Actor (double click): Landscape (Landscape)
+[2019.05.01-08.30.18:009][849]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone88)
+[2019.05.01-08.31.20:461][935]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-08.31.48:376][974]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-08.31.48:631][993]LogAIModule: Creating AISystem for world Level_1
+[2019.05.01-08.31.48:644][993]LogAssetEditorManager: Opening Asset editor for World /Game/FirstPersonBP/Maps/Level_1.Level_1
+[2019.05.01-08.31.50:222][993]LogSlate: Window 'Save Content' being destroyed
+[2019.05.01-08.31.50:920][993]LogSavePackage: Moving '../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Level_42AF8ECA04D6F9EF1B9E9D8BD930649E7.tmp' to '../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_4.umap'
+[2019.05.01-08.31.50:977][993]LogFileHelpers: Saving map 'Level_4' took 0.749
+[2019.05.01-08.31.51:038][993]LogSavePackage: Moving '../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Level_5201589754F94350DF8C0D29C3B4816DB.tmp' to '../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_5.umap'
+[2019.05.01-08.31.51:041][993]LogFileHelpers: Saving map 'Level_5' took 0.063
+[2019.05.01-08.31.51:042][993]Cmd: MAP LOAD FILE="../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_1.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.05.01-08.31.51:042][993]LightingResults: New page: Lighting Build
+[2019.05.01-08.31.51:043][993]LoadErrors: New page: Loading map: Level_1.umap
+[2019.05.01-08.31.51:047][993]MapCheck: New page: Map Check
+[2019.05.01-08.31.51:048][993]LightingResults: New page: Lighting Build
+[2019.05.01-08.31.51:161][993]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.05.01-08.31.51:216][993]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.05.01-08.31.51:217][993]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.161ms to complete.
+[2019.05.01-08.31.51:217][993]LogFileHelpers: Loading map 'Level_1' took 0.176
+[2019.05.01-08.31.51:419][993]LogAIModule: Creating AISystem for world Level_4
+[2019.05.01-08.32.10:407][244]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.05.01-08.32.20:357][283]LogEditorViewport: Clicking on Actor (LMB): DirectionalLight (Light Source)
+[2019.05.01-08.32.28:562][240]LogEditorViewport: Clicking on Actor (LMB): SkyLight (SkyLight)
+[2019.05.01-08.32.30:892][515]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-08.32.43:283][894]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-08.32.43:407][908]LogSlate: Window 'Color Picker' being destroyed
+[2019.05.01-08.32.51:995][867]LogEditorViewport: Clicking on Actor (LMB): DirectionalLight (Light Source)
+[2019.05.01-08.32.53:709][ 62]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.05.01-08.33.02:447][ 11]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2019.05.01-08.33.04:010][187]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-08.33.04:084][196]LogSlate: Window 'Color Picker' being destroyed
+[2019.05.01-08.33.05:149][323]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.05.01-08.33.07:872][636]LogSlate: Window 'Color Picker' being destroyed
+[2019.05.01-08.33.09:818][869]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-08.33.18:798][907]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.05.01-08.33.19:883][ 36]LogSlate: Window 'Color Picker' being destroyed
+[2019.05.01-08.33.20:915][159]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.05.01-08.33.23:219][430]LogSlate: Window 'Color Picker' being destroyed
+[2019.05.01-08.33.30:152][220]LogEditorViewport: Clicking on Actor (LMB): SphereReflectionCapture (SphereReflectionCapture)
+[2019.05.01-08.33.34:628][721]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
+[2019.05.01-08.33.35:355][801]LogEditorViewport: Clicking on Actor (LMB): DirectionalLight (Light Source)
+[2019.05.01-08.33.36:807][962]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.05.01-08.33.40:403][365]LogSlate: Window 'Color Picker' being destroyed
+[2019.05.01-08.33.44:439][806]LogEditorViewport: Clicking on Actor (LMB): AtmosphericFog (AtmosphericFog)
+[2019.05.01-08.33.55:199][ 30]LogEditorViewport: Clicking on Actor (LMB): SkyLight (SkyLight)
+[2019.05.01-08.34.03:034][870]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.05.01-08.34.08:578][516]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-08.34.08:709][531]LogSlate: Window 'Color Picker' being destroyed
+[2019.05.01-08.34.12:921][ 33]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.05.01-08.34.18:773][595]LogSlate: Window 'Color Picker' being destroyed
+[2019.05.01-08.34.58:136][208]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-08.34.58:321][227]LogAIModule: Creating AISystem for world Level_5
+[2019.05.01-08.34.58:322][227]LogAssetEditorManager: Opening Asset editor for World /Game/FirstPersonBP/Maps/Level_5.Level_5
+[2019.05.01-08.35.01:101][227]LogSlate: Window 'Save Content' being destroyed
+[2019.05.01-08.35.01:870][227]LogSavePackage: Moving '../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Level_1E7000DD445334C046086088A01B14BF6.tmp' to '../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_1.umap'
+[2019.05.01-08.35.01:930][227]LogFileHelpers: Saving map 'Level_1' took 0.823
+[2019.05.01-08.35.01:932][227]Cmd: MAP LOAD FILE="../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_5.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.05.01-08.35.01:932][227]LightingResults: New page: Lighting Build
+[2019.05.01-08.35.01:933][227]LoadErrors: New page: Loading map: Level_5.umap
+[2019.05.01-08.35.01:937][227]MapCheck: New page: Map Check
+[2019.05.01-08.35.01:937][227]LightingResults: New page: Lighting Build
+[2019.05.01-08.35.02:157][227]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.05.01-08.35.02:206][227]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.05.01-08.35.02:206][227]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.125ms to complete.
+[2019.05.01-08.35.02:206][227]LogFileHelpers: Loading map 'Level_5' took 0.276
+[2019.05.01-08.35.02:352][227]LogAIModule: Creating AISystem for world Level_1
+[2019.05.01-08.35.05:997][633]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-08.35.08:614][883]LogTexture: Display: Building textures: Texture2D_2 (G8, 128X128)
+[2019.05.01-08.35.12:369][295]LogTexture: Display: Building textures: Texture2D_0 (BGRA8, 512X512)
+[2019.05.01-08.35.14:911][571]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-08.35.27:622][ 40]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-08.35.30:985][424]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-08.35.31:548][472]LogAIModule: Creating AISystem for world Level_4
+[2019.05.01-08.35.31:571][472]LogAssetEditorManager: Opening Asset editor for World /Game/FirstPersonBP/Maps/Level_4.Level_4
+[2019.05.01-08.35.33:248][472]LogSlate: Window 'Save Content' being destroyed
+[2019.05.01-08.35.34:368][472]LogSavePackage: Moving '../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Level_536AB036743D2FAAE85DEA5B8A23DAD28.tmp' to '../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_5.umap'
+[2019.05.01-08.35.34:392][472]LogFileHelpers: Saving map 'Level_5' took 1.138
+[2019.05.01-08.35.34:393][472]Cmd: MAP LOAD FILE="../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_4.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.05.01-08.35.34:393][472]LightingResults: New page: Lighting Build
+[2019.05.01-08.35.34:393][472]LoadErrors: New page: Loading map: Level_4.umap
+[2019.05.01-08.35.34:395][472]MapCheck: New page: Map Check
+[2019.05.01-08.35.34:395][472]LightingResults: New page: Lighting Build
+[2019.05.01-08.35.34:635][472]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.05.01-08.35.34:724][472]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.05.01-08.35.34:725][472]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.239ms to complete.
+[2019.05.01-08.35.34:725][472]LogFileHelpers: Loading map 'Level_4' took 0.333
+[2019.05.01-08.35.34:837][472]LogAIModule: Creating AISystem for world Level_5
+[2019.05.01-08.35.35:843][568]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-08.35.36:041][591]LogAssetEditorManager: Opening Asset editor for World /Game/FirstPersonBP/Maps/Level_5.Level_5
+[2019.05.01-08.35.36:064][591]Cmd: MAP LOAD FILE="../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_5.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.05.01-08.35.36:064][591]LightingResults: New page: Lighting Build
+[2019.05.01-08.35.36:065][591]LoadErrors: New page: Loading map: Level_5.umap
+[2019.05.01-08.35.36:068][591]MapCheck: New page: Map Check
+[2019.05.01-08.35.36:068][591]LightingResults: New page: Lighting Build
+[2019.05.01-08.35.36:164][591]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.05.01-08.35.36:239][591]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.05.01-08.35.36:239][591]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.16ms to complete.
+[2019.05.01-08.35.36:240][591]LogFileHelpers: Loading map 'Level_5' took 0.177
+[2019.05.01-08.35.38:922][895]LogEditorViewport: Clicking Background
+[2019.05.01-08.36.12:251][835]LogEditorViewport: Clicking on Actor (LMB): SkyLight (SkyLight)
+[2019.05.01-08.36.25:886][421]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-08.36.36:682][594]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-08.36.41:594][145]LogAIModule: Creating AISystem for world Level_4
+[2019.05.01-08.36.41:628][145]LogAssetEditorManager: Opening Asset editor for World /Game/FirstPersonBP/Maps/Level_4.Level_4
+[2019.05.01-08.36.42:848][145]LogSlate: Window 'Save Content' being destroyed
+[2019.05.01-08.36.43:193][145]LogSavePackage: Moving '../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Level_5E881BC424DEA11026426069092351BEB.tmp' to '../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_5.umap'
+[2019.05.01-08.36.43:248][145]LogFileHelpers: Saving map 'Level_5' took 0.394
+[2019.05.01-08.36.43:249][145]Cmd: MAP LOAD FILE="../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_4.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.05.01-08.36.43:249][145]LightingResults: New page: Lighting Build
+[2019.05.01-08.36.43:251][145]LoadErrors: New page: Loading map: Level_4.umap
+[2019.05.01-08.36.43:253][145]MapCheck: New page: Map Check
+[2019.05.01-08.36.43:253][145]LightingResults: New page: Lighting Build
+[2019.05.01-08.36.43:455][145]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.05.01-08.36.43:520][145]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.05.01-08.36.43:522][145]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 1.844ms to complete.
+[2019.05.01-08.36.43:522][145]LogFileHelpers: Loading map 'Level_4' took 0.274
+[2019.05.01-08.36.43:615][145]LogAIModule: Creating AISystem for world Level_5
+[2019.05.01-08.36.45:601][356]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
+[2019.05.01-08.36.50:900][828]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-08.36.51:085][848]LogAssetEditorManager: Opening Asset editor for World /Game/FirstPersonBP/Maps/Level_5.Level_5
+[2019.05.01-08.36.51:113][848]Cmd: MAP LOAD FILE="../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_5.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.05.01-08.36.51:113][848]LightingResults: New page: Lighting Build
+[2019.05.01-08.36.51:113][848]LoadErrors: New page: Loading map: Level_5.umap
+[2019.05.01-08.36.51:117][848]MapCheck: New page: Map Check
+[2019.05.01-08.36.51:117][848]LightingResults: New page: Lighting Build
+[2019.05.01-08.36.51:224][848]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.05.01-08.36.51:283][848]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.05.01-08.36.51:283][848]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.137ms to complete.
+[2019.05.01-08.36.51:284][848]LogFileHelpers: Loading map 'Level_5' took 0.172
+[2019.05.01-08.37.04:181][323]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-08.37.04:453][344]LogAIModule: Creating AISystem for world Level_2
+[2019.05.01-08.37.04:462][344]LogAssetEditorManager: Opening Asset editor for World /Game/FirstPersonBP/Maps/Level_2.Level_2
+[2019.05.01-08.37.04:487][344]Cmd: MAP LOAD FILE="../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_2.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.05.01-08.37.04:487][344]LightingResults: New page: Lighting Build
+[2019.05.01-08.37.04:487][344]LoadErrors: New page: Loading map: Level_2.umap
+[2019.05.01-08.37.04:488][344]MapCheck: New page: Map Check
+[2019.05.01-08.37.04:488][344]LightingResults: New page: Lighting Build
+[2019.05.01-08.37.04:598][344]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.05.01-08.37.04:658][344]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.05.01-08.37.04:658][344]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.132ms to complete.
+[2019.05.01-08.37.04:658][344]LogFileHelpers: Loading map 'Level_2' took 0.173
+[2019.05.01-08.37.07:737][699]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-08.37.08:346][721]LogAIModule: Creating AISystem for world Level_3
+[2019.05.01-08.37.08:438][721]LogAssetEditorManager: Opening Asset editor for World /Game/FirstPersonBP/Maps/Level_3.Level_3
+[2019.05.01-08.37.08:480][721]Cmd: MAP LOAD FILE="../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_3.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.05.01-08.37.08:480][721]LightingResults: New page: Lighting Build
+[2019.05.01-08.37.08:481][721]LoadErrors: New page: Loading map: Level_3.umap
+[2019.05.01-08.37.08:483][721]MapCheck: New page: Map Check
+[2019.05.01-08.37.08:483][721]LightingResults: New page: Lighting Build
+[2019.05.01-08.37.09:007][721]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.05.01-08.37.09:074][721]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.05.01-08.37.09:074][721]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.235ms to complete.
+[2019.05.01-08.37.09:074][721]LogFileHelpers: Loading map 'Level_3' took 0.595
+[2019.05.01-08.37.18:777][758]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-08.37.19:027][778]LogAIModule: Creating AISystem for world Level_2
+[2019.05.01-08.37.19:035][778]LogAssetEditorManager: Opening Asset editor for World /Game/FirstPersonBP/Maps/Level_2.Level_2
+[2019.05.01-08.37.19:062][778]Cmd: MAP LOAD FILE="../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_2.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.05.01-08.37.19:062][778]LightingResults: New page: Lighting Build
+[2019.05.01-08.37.19:063][778]LoadErrors: New page: Loading map: Level_2.umap
+[2019.05.01-08.37.19:071][778]MapCheck: New page: Map Check
+[2019.05.01-08.37.19:071][778]LightingResults: New page: Lighting Build
+[2019.05.01-08.37.19:199][778]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.05.01-08.37.19:267][778]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.05.01-08.37.19:267][778]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.167ms to complete.
+[2019.05.01-08.37.19:267][778]LogFileHelpers: Loading map 'Level_2' took 0.206
+[2019.05.01-08.37.40:579][280]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-08.37.40:844][303]LogAIModule: Creating AISystem for world Level_5
+[2019.05.01-08.37.40:852][303]LogAssetEditorManager: Opening Asset editor for World /Game/FirstPersonBP/Maps/Level_5.Level_5
+[2019.05.01-08.37.40:877][303]Cmd: MAP LOAD FILE="../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_5.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.05.01-08.37.40:877][303]LightingResults: New page: Lighting Build
+[2019.05.01-08.37.40:877][303]LoadErrors: New page: Loading map: Level_5.umap
+[2019.05.01-08.37.40:879][303]MapCheck: New page: Map Check
+[2019.05.01-08.37.40:879][303]LightingResults: New page: Lighting Build
+[2019.05.01-08.37.40:975][303]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.05.01-08.37.41:034][303]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.05.01-08.37.41:034][303]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.123ms to complete.
+[2019.05.01-08.37.41:034][303]LogFileHelpers: Loading map 'Level_5' took 0.158
+[2019.05.01-08.53.19:808][490]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-08.57.30:279][670]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-08.57.30:342][677]LogTexture: Display: Building textures: Texture2D_3 (G8, 128X128)
+[2019.05.01-08.57.44:042][281]Cmd: TRANSACTION UNDO
+[2019.05.01-08.57.44:042][281]LogEditorTransaction: Undo Landscape Editing: Sculpt
+[2019.05.01-08.57.45:778][474]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.05.01-08.58.00:833][233]LogEditorViewport: Clicking on Actor (double click): Landscape (Landscape)
+[2019.05.01-08.58.07:166][939]Cmd: TRANSACTION UNDO
+[2019.05.01-08.58.07:166][939]LogEditorTransaction: Undo Landscape Editing: Sculpt
+[2019.05.01-08.58.07:196][939]LogTexture: Display: Building textures: Texture2D_0 (BGRA8, 512X512)
+[2019.05.01-08.58.07:698][970]Cmd: TRANSACTION UNDO
+[2019.05.01-08.58.07:698][970]LogEditorTransaction: Undo Clicking on Actors (double-click)
+[2019.05.01-08.58.08:755][ 89]Cmd: TRANSACTION UNDO
+[2019.05.01-08.58.08:755][ 89]LogEditorTransaction: Undo Landscape Editing: Sculpt
+[2019.05.01-08.58.08:773][ 89]LogTexture: Display: Building textures: Texture2D_0 (BGRA8, 512X512)
+[2019.05.01-08.58.09:380][157]Cmd: TRANSACTION UNDO
+[2019.05.01-08.58.09:380][157]LogEditorTransaction: Undo Landscape Editing: Sculpt
+[2019.05.01-08.58.13:053][590]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.05.01-08.58.19:575][351]Cmd: TRANSACTION UNDO
+[2019.05.01-08.58.19:575][351]LogEditorTransaction: Undo Landscape Editing: Sculpt
+[2019.05.01-08.58.19:628][351]LogTexture: Display: Building textures: Texture2D_0 (BGRA8, 512X512)
+[2019.05.01-08.58.20:405][435]Cmd: TRANSACTION UNDO
+[2019.05.01-08.58.20:405][435]LogEditorTransaction: Undo Landscape Editing: Sculpt
+[2019.05.01-08.58.20:431][435]LogTexture: Display: Building textures: Texture2D_0 (BGRA8, 512X512)
+[2019.05.01-08.58.59:976][913]LogEditorViewport: Clicking on Actor (double click): Landscape (Landscape)
+[2019.05.01-08.59.06:528][686]Cmd: TRANSACTION UNDO
+[2019.05.01-08.59.06:528][686]LogEditorTransaction: Undo Landscape Editing: Sculpt
+[2019.05.01-08.59.06:550][686]LogTexture: Display: Building textures: Texture2D_0 (BGRA8, 512X512)
+[2019.05.01-08.59.22:255][396]LogEditorViewport: Clicking on Actor (double click): Landscape (Landscape)
+[2019.05.01-08.59.37:138][ 31]LogEditorViewport: Clicking on Actor (double click): Landscape (Landscape)
+[2019.05.01-09.00.56:059][899]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.05.01-09.00.56:117][899]LogTexture: Display: Building textures: Texture2D_0 (BGRA8, 512X512)
+[2019.05.01-09.00.56:422][899]LogSavePackage: Moving '../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Level_5_Auto1AED773204C1772964CC6F48409E4E22D.tmp' to '../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Autosaves/Game/FirstPersonBP/Maps/Level_5_Auto1.umap'
+[2019.05.01-09.00.56:429][899]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonBP/Maps/Level_5' took 0.352
+[2019.05.01-09.00.56:429][899]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.352
+[2019.05.01-09.01.08:952][340]Cmd: TRANSACTION UNDO
+[2019.05.01-09.01.08:952][340]LogEditorTransaction: Undo Landscape Editing: Sculpt
+[2019.05.01-09.01.08:971][340]LogTexture: Display: Building textures: Texture2D_0 (BGRA8, 512X512)
+[2019.05.01-09.01.16:647][181]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-09.01.33:647][977]LogEditorViewport: Clicking on Actor (double click): Landscape (Landscape)
+[2019.05.01-09.01.35:486][186]LogEditorViewport: Clicking on Actor (double click): Landscape (Landscape)
+[2019.05.01-09.01.56:054][563]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.05.01-09.01.56:183][563]LogTexture: Display: Building textures: Texture2D_0 (BGRA8, 512X512)
+[2019.05.01-09.01.56:354][563]LogSavePackage: Moving '../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Level_58AA1D03F484A3F2BAC7033AAF5236FAC.tmp' to '../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_5.umap'
+[2019.05.01-09.01.57:328][635]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-09.01.57:689][655]LogAIModule: Creating AISystem for world Level_4
+[2019.05.01-09.01.57:729][655]LogAssetEditorManager: Opening Asset editor for World /Game/FirstPersonBP/Maps/Level_4.Level_4
+[2019.05.01-09.01.57:779][655]Cmd: MAP LOAD FILE="../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_4.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.05.01-09.01.57:779][655]LightingResults: New page: Lighting Build
+[2019.05.01-09.01.57:779][655]LoadErrors: New page: Loading map: Level_4.umap
+[2019.05.01-09.01.57:781][655]MapCheck: New page: Map Check
+[2019.05.01-09.01.57:781][655]LightingResults: New page: Lighting Build
+[2019.05.01-09.01.57:926][655]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.05.01-09.01.57:992][655]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.05.01-09.01.57:992][655]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.236ms to complete.
+[2019.05.01-09.01.57:992][655]LogFileHelpers: Loading map 'Level_4' took 0.216
+[2019.05.01-09.02.23:964][609]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (wall_of_ruins01)
+[2019.05.01-09.02.47:873][368]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-09.02.48:129][386]LogAIModule: Creating AISystem for world Level_1
+[2019.05.01-09.02.48:143][386]LogAssetEditorManager: Opening Asset editor for World /Game/FirstPersonBP/Maps/Level_1.Level_1
+[2019.05.01-09.02.48:167][386]Cmd: MAP LOAD FILE="../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_1.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.05.01-09.02.48:167][386]LightingResults: New page: Lighting Build
+[2019.05.01-09.02.48:167][386]LoadErrors: New page: Loading map: Level_1.umap
+[2019.05.01-09.02.48:172][386]MapCheck: New page: Map Check
+[2019.05.01-09.02.48:172][386]LightingResults: New page: Lighting Build
+[2019.05.01-09.02.48:303][386]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.05.01-09.02.48:368][386]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.05.01-09.02.48:370][386]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 1.436ms to complete.
+[2019.05.01-09.02.48:370][386]LogFileHelpers: Loading map 'Level_1' took 0.204
+[2019.05.01-09.05.37:477][228]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-09.05.37:690][245]LogAIModule: Creating AISystem for world Level_5
+[2019.05.01-09.05.37:700][245]LogAssetEditorManager: Opening Asset editor for World /Game/FirstPersonBP/Maps/Level_5.Level_5
+[2019.05.01-09.05.37:726][245]Cmd: MAP LOAD FILE="../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_5.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.05.01-09.05.37:726][245]LightingResults: New page: Lighting Build
+[2019.05.01-09.05.37:726][245]LoadErrors: New page: Loading map: Level_5.umap
+[2019.05.01-09.05.37:728][245]MapCheck: New page: Map Check
+[2019.05.01-09.05.37:728][245]LightingResults: New page: Lighting Build
+[2019.05.01-09.05.37:822][245]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.05.01-09.05.37:885][245]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.05.01-09.05.37:885][245]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.15ms to complete.
+[2019.05.01-09.05.37:885][245]LogFileHelpers: Loading map 'Level_5' took 0.160
+[2019.05.01-09.05.39:258][389]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-09.05.39:572][408]LogAIModule: Creating AISystem for world Level_4
+[2019.05.01-09.05.39:594][408]LogAssetEditorManager: Opening Asset editor for World /Game/FirstPersonBP/Maps/Level_4.Level_4
+[2019.05.01-09.05.39:635][408]Cmd: MAP LOAD FILE="../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_4.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.05.01-09.05.39:636][408]LightingResults: New page: Lighting Build
+[2019.05.01-09.05.39:636][408]LoadErrors: New page: Loading map: Level_4.umap
+[2019.05.01-09.05.39:637][408]MapCheck: New page: Map Check
+[2019.05.01-09.05.39:637][408]LightingResults: New page: Lighting Build
+[2019.05.01-09.05.39:766][408]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.05.01-09.05.39:832][408]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.05.01-09.05.39:833][408]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.274ms to complete.
+[2019.05.01-09.05.39:833][408]LogFileHelpers: Loading map 'Level_4' took 0.198
+[2019.05.01-09.06.00:595][733]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (swinging_axe01_swinging_axe01)
+[2019.05.01-09.06.41:435][458]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (swinging_axe01_swinging_axe01)
+[2019.05.01-09.06.44:804][842]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone39)
+[2019.05.01-09.06.46:546][ 35]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (swinging_axe01_swinging_axe01)
+[2019.05.01-09.07.04:922][ 99]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.01-09.07.05:164][120]LogAIModule: Creating AISystem for world Level_5
+[2019.05.01-09.07.05:171][120]LogAssetEditorManager: Opening Asset editor for World /Game/FirstPersonBP/Maps/Level_5.Level_5
+[2019.05.01-09.07.05:194][120]Cmd: MAP LOAD FILE="../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_5.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.05.01-09.07.05:195][120]LightingResults: New page: Lighting Build
+[2019.05.01-09.07.05:195][120]LoadErrors: New page: Loading map: Level_5.umap
+[2019.05.01-09.07.05:199][120]MapCheck: New page: Map Check
+[2019.05.01-09.07.05:199][120]LightingResults: New page: Lighting Build
+[2019.05.01-09.07.05:295][120]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.05.01-09.07.05:362][120]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.05.01-09.07.05:362][120]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.158ms to complete.
+[2019.05.01-09.07.05:362][120]LogFileHelpers: Loading map 'Level_5' took 0.169
+[2019.05.01-09.07.07:707][385]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.05.01-09.07.08:050][385]LogSavePackage: Moving '../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Level_5804AB6AB40D71F6FF3C4AE8F4223D836.tmp' to '../../../../../../Users/Games/Documents/GitHub/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_5.umap'
