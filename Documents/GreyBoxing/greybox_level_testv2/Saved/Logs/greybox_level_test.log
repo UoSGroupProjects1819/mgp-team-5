@@ -1,4 +1,4 @@
-﻿Log file open, 05/03/19 17:14:03
+﻿Log file open, 05/03/19 18:33:30
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
@@ -10,7 +10,7 @@ LogInit: Display: Running engine for game: greybox_level_test
 LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
 LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.209905
+LogStats: Stats thread started at 0.197932
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +2:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -94,7 +94,7 @@ LogPluginManager: Mounting plugin RuntimePhysXCooking
 LogPluginManager: Mounting plugin SteamVR
 LogPluginManager: Mounting plugin WebMMoviePlayer
 LogPluginManager: Mounting plugin WindowsMoviePlayer
-LogStreaming: Display: Took  0.126s to configure plugins.
+LogStreaming: Display: Took  0.057s to configure plugins.
 LogInit: Using libcurl 7.55.1-DEV
 LogInit:  - built for x86_64-pc-win32
 LogInit:  - supports SSL with OpenSSL/1.0.2h
@@ -149,536 +149,430 @@ LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
 LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 17
 LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 4
 LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
-LogStreaming: Display: Took  0.011s to delete old logs.
+LogStreaming: Display: Took  0.001s to delete old logs.
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
-[2019.05.03-14.14.04:494][  0]LogConfig: Setting CVar [[r.VSync:0]]
-[2019.05.03-14.14.04:494][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
-[2019.05.03-14.14.04:494][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Engine.ini]
-[2019.05.03-14.14.04:494][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
-[2019.05.03-14.14.04:494][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Engine.ini]
-[2019.05.03-14.14.04:494][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Engine.ini]
-[2019.05.03-14.14.04:494][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
-[2019.05.03-14.14.04:494][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
-[2019.05.03-14.14.04:494][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
-[2019.05.03-14.14.04:494][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
-[2019.05.03-14.14.04:494][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
-[2019.05.03-14.14.04:494][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
-[2019.05.03-14.14.04:494][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
-[2019.05.03-14.14.04:494][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
-[2019.05.03-14.14.04:494][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
-[2019.05.03-14.14.04:494][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
-[2019.05.03-14.14.04:494][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
-[2019.05.03-14.14.04:494][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
-[2019.05.03-14.14.04:495][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
-[2019.05.03-14.14.04:495][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Engine.ini]
-[2019.05.03-14.14.04:495][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
-[2019.05.03-14.14.04:495][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
-[2019.05.03-14.14.04:495][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
-[2019.05.03-14.14.04:495][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
-[2019.05.03-14.14.04:495][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
-[2019.05.03-14.14.04:495][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
-[2019.05.03-14.14.04:495][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:8388607]]
-[2019.05.03-14.14.04:495][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
-[2019.05.03-14.14.04:495][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
-[2019.05.03-14.14.04:495][  0]LogConfig: Setting CVar [[gc.MergeGCClusters:0]]
-[2019.05.03-14.14.04:495][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
-[2019.05.03-14.14.04:495][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
-[2019.05.03-14.14.04:495][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
-[2019.05.03-14.14.04:495][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
-[2019.05.03-14.14.04:495][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Engine.ini]
-[2019.05.03-14.14.04:495][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Engine.ini]
-[2019.05.03-14.14.04:532][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2019.05.03-14.14.04:532][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2019.05.03-14.14.04:533][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2019.05.03-14.14.04:537][  0]LogInit: Selected Device Profile: [Windows]
-[2019.05.03-14.14.04:537][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2019.05.03-14.14.04:563][  0]LogHAL: Display: Platform has ~ 8 GB [8518709248 / 8589934592 / 8], which maps to Default [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2019.05.03-14.14.04:587][  0]LogConfig: Setting CVar [[r.Vulkan.UseRealUBs:1]]
-[2019.05.03-14.14.04:587][  0]LogInit: Going up to parent DeviceProfile []
-[2019.05.03-14.14.04:587][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
-[2019.05.03-14.14.04:587][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2019.05.03-14.14.04:587][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2019.05.03-14.14.04:587][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
-[2019.05.03-14.14.04:587][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2019.05.03-14.14.04:587][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
-[2019.05.03-14.14.04:587][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2019.05.03-14.14.04:587][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2019.05.03-14.14.04:587][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2019.05.03-14.14.04:587][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2019.05.03-14.14.04:587][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2019.05.03-14.14.04:587][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2019.05.03-14.14.04:587][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2019.05.03-14.14.04:587][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2019.05.03-14.14.04:587][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2019.05.03-14.14.04:587][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2019.05.03-14.14.04:587][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2019.05.03-14.14.04:587][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2019.05.03-14.14.04:587][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2019.05.03-14.14.04:587][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2019.05.03-14.14.04:587][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2019.05.03-14.14.04:587][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2019.05.03-14.14.04:588][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
-[2019.05.03-14.14.04:597][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
-[2019.05.03-14.14.04:597][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Engine.ini]
-[2019.05.03-14.14.04:611][  0]LogInit: Computer: RYZEN
-[2019.05.03-14.14.04:611][  0]LogInit: User: Victor
-[2019.05.03-14.14.04:611][  0]LogInit: CPU Page size=4096, Cores=4
-[2019.05.03-14.14.04:611][  0]LogInit: High frequency timer resolution =3.703975 MHz
-[2019.05.03-14.14.04:611][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
-[2019.05.03-14.14.04:611][  0]LogMemory: Platform Memory Stats for Windows
-[2019.05.03-14.14.04:611][  0]LogMemory: Process Physical Memory: 102.13 MB used, 102.13 MB peak
-[2019.05.03-14.14.04:611][  0]LogMemory: Process Virtual Memory: 84.95 MB used, 84.95 MB peak
-[2019.05.03-14.14.04:611][  0]LogMemory: Physical Memory: 3591.06 MB used,  4533.02 MB free, 8124.07 MB total
-[2019.05.03-14.14.04:611][  0]LogMemory: Virtual Memory: 4619.60 MB used,  134213112.00 MB free, 134217728.00 MB total
-[2019.05.03-14.14.05:004][  0]LogInit: Using OS detected language (bg-BG).
-[2019.05.03-14.14.05:004][  0]LogInit: Using OS detected locale (bg-BG).
-[2019.05.03-14.14.05:038][  0]LogTextLocalizationManager: No localization for 'bg-BG' exists, so 'en' will be used for the language.
-[2019.05.03-14.14.05:636][  0]LogStreaming: Display: Took  0.625s to InitEngineTextLocalization.
-[2019.05.03-14.14.05:642][  0]LogInit: Setting process to per monitor DPI aware
-[2019.05.03-14.14.05:910][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2019.05.03-14.14.05:910][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2019.05.03-14.14.06:302][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2019.05.03-14.14.06:302][  0]LogD3D11RHI: D3D11 adapters:
-[2019.05.03-14.14.06:376][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1050 Ti' (Feature Level 11_0)
-[2019.05.03-14.14.06:376][  0]LogD3D11RHI:       4018/0/4062 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2019.05.03-14.14.06:378][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2019.05.03-14.14.06:378][  0]LogD3D11RHI:       0/0/4062 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2019.05.03-14.14.06:378][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2019.05.03-14.14.06:386][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2019.05.03-14.14.06:386][  0]LogD3D11RHI:     GPU DeviceId: 0x1c82 (for the marketing name, search the web for "GPU Device Id")
-[2019.05.03-14.14.06:386][  0]LogWindows: EnumDisplayDevices:
-[2019.05.03-14.14.06:386][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1050 Ti' (P:1 D:1)
-[2019.05.03-14.14.06:386][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1050 Ti' (P:0 D:0)
-[2019.05.03-14.14.06:386][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1050 Ti' (P:0 D:0)
-[2019.05.03-14.14.06:387][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1050 Ti' (P:0 D:0)
-[2019.05.03-14.14.06:387][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2019.05.03-14.14.06:387][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1050 Ti
-[2019.05.03-14.14.06:387][  0]LogD3D11RHI:   Driver Version: 419.67 (internal:25.21.14.1967, unified:419.67)
-[2019.05.03-14.14.06:387][  0]LogD3D11RHI:      Driver Date: 3-17-2019
-[2019.05.03-14.14.06:387][  0]LogRHI: Texture pool is 2812 MB (70% of 4018 MB)
-[2019.05.03-14.14.06:436][  0]LogD3D11RHI: Async texture creation enabled
-[2019.05.03-14.14.06:602][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
-[2019.05.03-14.14.07:226][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
-[2019.05.03-14.14.07:253][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
-[2019.05.03-14.14.07:319][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
-[2019.05.03-14.14.07:338][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
-[2019.05.03-14.14.07:369][  0]LogTemp: Display: Loaded TP MacTargetPlatform
-[2019.05.03-14.14.07:413][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
-[2019.05.03-14.14.07:440][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
-[2019.05.03-14.14.07:458][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
-[2019.05.03-14.14.07:469][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
-[2019.05.03-14.14.07:570][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.05.03-14.14.07:570][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.05.03-14.14.07:570][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.05.03-14.14.07:570][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.05.03-14.14.07:570][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.05.03-14.14.07:570][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.05.03-14.14.07:570][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.05.03-14.14.07:570][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.05.03-14.14.07:570][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.05.03-14.14.07:570][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.05.03-14.14.07:571][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.05.03-14.14.07:571][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.05.03-14.14.07:571][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.05.03-14.14.07:571][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.05.03-14.14.07:571][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.05.03-14.14.07:571][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.05.03-14.14.07:571][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.05.03-14.14.07:571][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.05.03-14.14.07:585][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
-[2019.05.03-14.14.07:690][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2019.05.03-14.14.07:690][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2019.05.03-14.14.07:719][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2019.05.03-14.14.07:719][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2019.05.03-14.14.07:758][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
-[2019.05.03-14.14.07:777][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
-[2019.05.03-14.14.07:797][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
-[2019.05.03-14.14.07:815][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
-[2019.05.03-14.14.07:879][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
-[2019.05.03-14.14.07:879][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
-[2019.05.03-14.14.07:879][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2019.05.03-14.14.08:274][  0]LogShaderCompilers: Guid format shader working directory is -31 characters bigger than the processId version (../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Intermediate/Shaders/WorkingDirectory/9192/).
-[2019.05.03-14.14.08:274][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Victor/AppData/Local/Temp/UnrealShaderWorkingDir/17AD83A240FBA3D01BDA1DAF62008D6A/'.
-[2019.05.03-14.14.08:283][  0]LogXGEController: Cleaning working directory: C:/Users/Victor/AppData/Local/Temp/UnrealXGEWorkingDir/
-[2019.05.03-14.14.08:283][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2019.05.03-14.14.08:283][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2019.05.03-14.14.08:283][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2019.05.03-14.14.09:390][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2019.05.03-14.14.09:585][  0]LogDerivedDataCache: Loaded boot cache 0.19s 71MB C:/Users/Victor/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
-[2019.05.03-14.14.09:585][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Victor/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc
-[2019.05.03-14.14.09:585][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2019.05.03-14.14.09:585][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2019.05.03-14.14.09:585][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2019.05.03-14.14.09:585][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2019.05.03-14.14.09:635][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2019.05.03-14.14.09:635][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2019.05.03-14.14.09:635][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
-[2019.05.03-14.14.09:647][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Victor/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2019.05.03-14.14.09:647][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2019.05.03-14.14.09:647][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2019.05.03-14.14.09:709][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2019.05.03-14.14.09:746][  0]LogSlate: Using FreeType 2.6.0
-[2019.05.03-14.14.09:792][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2019.05.03-14.14.10:246][  0]LogAssetRegistry: FAssetRegistry took 0.0619 seconds to start up
-[2019.05.03-14.14.12:629][  0]LogInit: Selected Device Profile: [Windows]
-[2019.05.03-14.14.13:463][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2019.05.03-14.14.13:539][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
-[2019.05.03-14.14.13:539][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2019.05.03-14.14.13:539][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2019.05.03-14.14.13:539][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
-[2019.05.03-14.14.13:749][  0]LogNetVersion: greybox_level_test 1.0.0, NetCL: 4541578, EngineNetVer: 5, GameNetVer: 0 (Checksum: 3484623482)
-[2019.05.03-14.14.15:719][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 1 prioritized culture(s) in 0.054714 seconds
-[2019.05.03-14.14.15:733][  0]LogUObjectArray: 39775 objects as part of root set at end of initial load.
-[2019.05.03-14.14.15:733][  0]LogUObjectAllocator: 6914656 out of 0 bytes used by permanent object pool.
-[2019.05.03-14.14.15:733][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2019.05.03-14.14.19:877][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2019.05.03-14.14.19:911][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2019.05.03-14.14.21:142][  0]SourceControl: Source control is disabled
-[2019.05.03-14.14.21:142][  0]SourceControl: Source control is disabled
-[2019.05.03-14.14.21:181][  0]SourceControl: Source control is disabled
-[2019.05.03-14.14.21:208][  0]SourceControl: Source control is disabled
-[2019.05.03-14.14.22:059][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2019.05.03-14.14.22:218][  0]LogOcInput: OculusInput pre-init called
-[2019.05.03-14.14.22:830][  0]LogEngine: Initializing Engine...
-[2019.05.03-14.14.22:846][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2019.05.03-14.14.22:849][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
-[2019.05.03-14.14.22:849][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2019.05.03-14.14.22:849][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
-[2019.05.03-14.14.22:849][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2019.05.03-14.14.23:301][  0]LogInit: Initializing FReadOnlyCVARCache
-[2019.05.03-14.14.23:466][  0]LogAIModule: Creating AISystem for world Untitled
-[2019.05.03-14.14.23:523][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 4 channels at 48 kHz using 32 bits per sample (channel mask 0x33)
-[2019.05.03-14.14.23:542][  0]LogInit: FAudioDevice initialized.
-[2019.05.03-14.14.23:542][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2019.05.03-14.14.23:622][  0]LogDerivedDataCache: Saved boot cache 0.08s 71MB C:/Users/Victor/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
-[2019.05.03-14.14.23:623][  0]LogInit: Texture streaming: Enabled
-[2019.05.03-14.14.23:698][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2019.05.03-14.14.24:400][  0]LogInit: Transaction tracking system initialized
-[2019.05.03-14.14.27:032][  0]BlueprintLog: New page: Editor Load
-[2019.05.03-14.14.28:419][  0]LocalizationService: Localization service is disabled
-[2019.05.03-14.14.31:877][  0]LogFileCache: Scanning file cache for directory 'E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/' took 0.02s
-[2019.05.03-14.14.31:877][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2019.05.03-14.14.31:877][  0]LogCook: Display: Mobile HDR setting 1
-[2019.05.03-14.14.31:877][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
-[2019.05.03-14.14.31:877][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
-[2019.05.03-14.14.31:878][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2019.05.03-14.14.31:878][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
-[2019.05.03-14.14.31:878][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2019.05.03-14.14.33:408][  0]SourceControl: Source control is disabled
-[2019.05.03-14.14.33:457][  0]Cmd: MAP LOAD FILE="../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2019.05.03-14.14.33:458][  0]LogEditorServer: Warning: Can't find file '../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap'
-[2019.05.03-14.14.33:458][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2019.05.03-14.14.33:473][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 14,985ms to complete.
-[2019.05.03-14.14.33:473][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.042
-[2019.05.03-14.14.35:373][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.05.03-14.14.35:382][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.05.03-14.14.35:389][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.05.03-14.14.35:397][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.05.03-14.14.35:598][  0]LogCollectionManager: Loaded 0 collections in 0.002027 seconds
-[2019.05.03-14.14.35:751][  0]LogFileCache: Scanning file cache for directory 'E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Collections/' took 0.01s
-[2019.05.03-14.14.35:751][  0]LogFileCache: Scanning file cache for directory 'E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/Developers/Victor/Collections/' took 0.00s
-[2019.05.03-14.14.35:751][  0]LogFileCache: Scanning file cache for directory 'E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/Collections/' took 0.00s
-[2019.05.03-14.14.35:751][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
-[2019.05.03-14.14.35:778][  0]LogContentBrowser: Native class hierarchy populated in 0.0261 seconds. Added 2651 classes and 620 folders.
-[2019.05.03-14.14.35:809][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2019.05.03-14.14.35:853][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.05.03-14.14.35:870][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.05.03-14.14.35:877][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.05.03-14.14.35:888][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.05.03-14.14.35:898][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.05.03-14.14.35:909][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.05.03-14.14.35:910][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.05.03-14.14.35:912][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.05.03-14.14.35:920][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.05.03-14.14.35:931][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.05.03-14.14.35:944][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.05.03-14.14.35:951][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.05.03-14.14.35:953][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.05.03-14.14.35:958][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.05.03-14.14.35:959][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.05.03-14.14.35:960][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.05.03-14.14.35:961][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.05.03-14.14.35:964][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.05.03-14.14.35:965][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.05.03-14.14.35:967][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.05.03-14.14.35:972][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.05.03-14.14.35:973][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.05.03-14.14.35:979][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.05.03-14.14.35:986][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.05.03-14.14.35:996][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.05.03-14.14.36:004][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.05.03-14.14.36:623][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2019.05.03-14.14.36:676][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
-[2019.05.03-14.14.36:952][  0]LogSlate: Took 0.008733 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2019.05.03-14.14.36:975][  0]LogSlate: Took 0.016169 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2019.05.03-14.14.37:017][  0]LogSlate: Took 0.005742 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2019.05.03-14.14.37:381][  0]LogRenderer: Reallocating scene render targets to support 1044x652 Format 10 NumSamples 1 (Frame:1).
-[2019.05.03-14.14.38:324][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2019.05.03-14.14.38:324][  0]LogLoad: (Engine Initialization) Total time: 39.72 seconds
-[2019.05.03-14.14.38:324][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2019.05.03-14.14.38:462][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2019.05.03-14.14.38:556][  1]LogAssetRegistry: Asset discovery search completed in 28.3331 seconds
-[2019.05.03-14.14.38:558][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
-[2019.05.03-14.14.38:558][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000092 seconds (updated 0 objects)
-[2019.05.03-14.14.42:595][ 13]LogSlate: Took 0.013219 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2019.05.03-14.14.48:391][340]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.05.03-14.14.48:549][358]LogSlate: Took 0.000233 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2019.05.03-14.14.49:370][358]LogAIModule: Creating AISystem for world Level_5
-[2019.05.03-14.14.49:490][358]LogAssetEditorManager: Opening Asset editor for World /Game/FirstPersonBP/Maps/Level_5.Level_5
-[2019.05.03-14.14.49:574][358]Cmd: MAP LOAD FILE="../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_5.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2019.05.03-14.14.49:574][358]LightingResults: New page: Lighting Build
-[2019.05.03-14.14.49:601][358]LogContentBrowser: Native class hierarchy updated for 'StatsViewer' in 0.0003 seconds. Added 5 classes and 0 folders.
-[2019.05.03-14.14.49:602][358]LoadErrors: New page: Loading map: Level_5.umap
-[2019.05.03-14.14.49:618][358]MapCheck: New page: Map Check
-[2019.05.03-14.14.49:618][358]LightingResults: New page: Lighting Build
-[2019.05.03-14.14.49:861][358]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2019.05.03-14.14.49:943][358]Cmd: MAP CHECKDEP NOCLEARLOG
-[2019.05.03-14.14.49:944][358]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,11ms to complete.
-[2019.05.03-14.14.49:944][358]LogFileHelpers: Loading map 'Level_5' took 0.379
-[2019.05.03-14.14.57:552][237]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.05.03-14.14.57:738][258]LogActorFactory: Actor Factory created stone01
-[2019.05.03-14.14.59:164][413]LogActorFactory: Actor Factory created stone01
-[2019.05.03-14.15.00:783][562]Cmd: TRANSACTION UNDO
-[2019.05.03-14.15.00:784][562]LogEditorTransaction: Undo Create Actors
-[2019.05.03-14.15.05:057][ 65]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone75)
-[2019.05.03-14.17.03:825][610]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone78)
-[2019.05.03-14.17.10:748][376]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone79)
-[2019.05.03-14.17.17:418][100]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone145)
-[2019.05.03-14.17.41:608][856]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone82)
-[2019.05.03-14.17.46:566][420]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone83)
-[2019.05.03-14.17.56:267][465]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone146)
-[2019.05.03-14.18.43:833][899]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone149)
-[2019.05.03-14.19.18:190][831]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone89)
-[2019.05.03-14.19.24:572][557]Cmd: TRANSACTION UNDO
-[2019.05.03-14.19.24:572][557]LogEditorTransaction: Undo Scale Actors
-[2019.05.03-14.19.40:099][365]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone150)
-[2019.05.03-14.20.01:320][743]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone151)
-[2019.05.03-14.22.23:849][322]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone157)
-[2019.05.03-14.22.32:875][332]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone155)
-[2019.05.03-14.22.51:790][467]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone156)
-[2019.05.03-14.22.58:792][208]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone157)
-[2019.05.03-14.23.05:308][890]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone158)
-[2019.05.03-14.23.27:065][420]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone157)
-[2019.05.03-14.23.39:342][773]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone106)
-[2019.05.03-14.23.43:675][241]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone105)
-[2019.05.03-14.23.53:163][307]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone104)
-[2019.05.03-14.23.59:543][ 27]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone158)
-[2019.05.03-14.25.05:584][276]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone108)
-[2019.05.03-14.25.18:685][813]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (stone159)
-[2019.05.03-14.25.18:796][813]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2019.05.03-14.25.19:626][907]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone160)
-[2019.05.03-14.26.01:176][588]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.05.03-14.26.01:275][600]LogTemp: Repeating last play command: Selected Viewport
-[2019.05.03-14.26.01:723][600]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/Level_5.Level_5:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/Level_5.Level_5:PersistentLevel.Level_5' with GeneratedClass '/Game/FirstPersonBP/Maps/Level_5.Level_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/Level_5.Level_5:PersistentLevel.Level_5'
-[2019.05.03-14.26.01:730][600]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2019.05.03-14.26.01:735][600]PIE: New page: PIE session: Level_5 (3.05.2019 г., 20:26:01)
-[2019.05.03-14.26.01:787][600]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_Level_5
-[2019.05.03-14.26.01:848][600]LogPlayLevel: PIE: StaticDuplicateObject took: (0.060749s)
-[2019.05.03-14.26.01:849][600]LogAIModule: Creating AISystem for world Level_5
-[2019.05.03-14.26.01:849][600]LogPlayLevel: PIE: World Init took: (0.000644s)
-[2019.05.03-14.26.01:849][600]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/Level_5.Level_5 to /Game/FirstPersonBP/Maps/UEDPIE_0_Level_5.Level_5 (0.061942s)
-[2019.05.03-14.26.01:897][600]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 4 channels at 48 kHz using 32 bits per sample (channel mask 0x33)
-[2019.05.03-14.26.01:911][600]LogInit: FAudioDevice initialized.
-[2019.05.03-14.26.03:068][600]LogLoad: Game class is 'FirstPersonGameMode_C'
-[2019.05.03-14.26.03:121][600]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_Level_5.Level_5 up for play (max tick rate 0) at 2019.05.03-17.26.03
-[2019.05.03-14.26.03:142][600]LogWorld: Bringing up level for play took: 0.035681
-[2019.05.03-14.26.03:276][600]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0004 seconds. Added 20 classes and 0 folders.
-[2019.05.03-14.26.03:345][600]PIE: Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_Level_5 1,247
-[2019.05.03-14.26.03:345][600]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/Level_5.Level_5:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/Level_5.Level_5:PersistentLevel.Level_5' with GeneratedClass '/Game/FirstPersonBP/Maps/Level_5.Level_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/Level_5.Level_5:PersistentLevel.Level_5'
-[2019.05.03-14.26.18:270][370]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/Level_5.Level_5:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/Level_5.Level_5:PersistentLevel.Level_5' with GeneratedClass '/Game/FirstPersonBP/Maps/Level_5.Level_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/Level_5.Level_5:PersistentLevel.Level_5'
-[2019.05.03-14.26.18:270][370]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.05.03-14.26.18:325][370]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2019.05.03-14.26.18:326][370]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/Level_5.Level_5:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/Level_5.Level_5:PersistentLevel.Level_5' with GeneratedClass '/Game/FirstPersonBP/Maps/Level_5.Level_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/Level_5.Level_5:PersistentLevel.Level_5'
-[2019.05.03-14.26.18:376][370]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.05.03-14.26.18:469][371]LogPlayLevel: Display: Destroying online subsystem :Context_3
-[2019.05.03-14.26.22:534][835]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone161)
-[2019.05.03-14.28.11:077][ 63]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone169)
-[2019.05.03-14.28.16:494][674]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone168)
-[2019.05.03-14.28.18:099][840]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone167)
-[2019.05.03-14.28.20:943][143]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone166)
-[2019.05.03-14.28.22:481][296]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone165)
-[2019.05.03-14.28.29:336][ 68]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone170)
-[2019.05.03-14.28.38:359][ 54]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone170)
-[2019.05.03-14.28.40:800][322]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone171)
-[2019.05.03-14.28.45:672][890]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone172)
-[2019.05.03-14.29.07:077][239]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone174)
-[2019.05.03-14.29.13:312][947]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone173)
-[2019.05.03-14.29.16:115][242]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone172)
-[2019.05.03-14.29.19:239][565]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone171)
-[2019.05.03-14.29.23:429][ 11]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone170)
-[2019.05.03-14.29.26:786][394]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone142)
-[2019.05.03-14.29.36:155][449]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone141)
-[2019.05.03-14.29.39:152][793]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (stone140)
-[2019.05.03-14.29.56:287][769]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.05.03-14.29.56:849][777]LogTexture: Display: Building textures: Texture2D_2 (G8, 128X128)
-[2019.05.03-14.30.09:582][212]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2019.05.03-14.30.38:346][378]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2019.05.03-14.30.40:039][576]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2019.05.03-14.30.54:211][146]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.05.03-14.31.07:322][590]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.05.03-14.31.07:396][599]LogTemp: Repeating last play command: Selected Viewport
-[2019.05.03-14.31.07:406][599]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/Level_5.Level_5:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/Level_5.Level_5:PersistentLevel.Level_5' with GeneratedClass '/Game/FirstPersonBP/Maps/Level_5.Level_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/Level_5.Level_5:PersistentLevel.Level_5'
-[2019.05.03-14.31.07:406][599]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2019.05.03-14.31.07:406][599]PIE: New page: PIE session: Level_5 (3.05.2019 г., 20:31:07)
-[2019.05.03-14.31.07:406][599]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_Level_5
-[2019.05.03-14.31.07:444][599]LogPlayLevel: PIE: StaticDuplicateObject took: (0.037327s)
-[2019.05.03-14.31.07:444][599]LogAIModule: Creating AISystem for world Level_5
-[2019.05.03-14.31.07:444][599]LogPlayLevel: PIE: World Init took: (0.000630s)
-[2019.05.03-14.31.07:444][599]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/Level_5.Level_5 to /Game/FirstPersonBP/Maps/UEDPIE_0_Level_5.Level_5 (0.038113s)
-[2019.05.03-14.31.07:512][599]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 4 channels at 48 kHz using 32 bits per sample (channel mask 0x33)
-[2019.05.03-14.31.07:526][599]LogInit: FAudioDevice initialized.
-[2019.05.03-14.31.07:555][599]LogLoad: Game class is 'FirstPersonGameMode_C'
-[2019.05.03-14.31.07:561][599]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_Level_5.Level_5 up for play (max tick rate 0) at 2019.05.03-17.31.07
-[2019.05.03-14.31.07:562][599]LogWorld: Bringing up level for play took: 0.005895
-[2019.05.03-14.31.07:577][599]PIE: Play in editor start time for /Game/FirstPersonBP/Maps/UEDPIE_0_Level_5 -0,521
-[2019.05.03-14.31.07:577][599]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/Level_5.Level_5:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/Level_5.Level_5:PersistentLevel.Level_5' with GeneratedClass '/Game/FirstPersonBP/Maps/Level_5.Level_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/Level_5.Level_5:PersistentLevel.Level_5'
-[2019.05.03-14.31.29:638][235]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/Level_5.Level_5:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/Level_5.Level_5:PersistentLevel.Level_5' with GeneratedClass '/Game/FirstPersonBP/Maps/Level_5.Level_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/Level_5.Level_5:PersistentLevel.Level_5'
-[2019.05.03-14.31.29:638][235]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.05.03-14.31.29:672][235]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2019.05.03-14.31.29:673][235]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/Level_5.Level_5:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/Level_5.Level_5:PersistentLevel.Level_5' with GeneratedClass '/Game/FirstPersonBP/Maps/Level_5.Level_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/Level_5.Level_5:PersistentLevel.Level_5'
-[2019.05.03-14.31.29:701][235]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.05.03-14.31.29:743][238]LogPlayLevel: Display: Destroying online subsystem :Context_4
-[2019.05.03-14.31.32:536][563]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2019.05.03-14.31.33:017][563]LogTexture: Display: Building textures: Texture2D_0 (BGRA8, 512X512)
-[2019.05.03-14.31.33:332][563]LogSavePackage: Moving '../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Level_549A4F07F489B9F761BCDC491A9C19B32.tmp' to '../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_5.umap'
-[2019.05.03-14.31.43:826][256]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.03-15.33.30:634][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2019.05.03-15.33.30:634][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2019.05.03-15.33.30:634][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Engine.ini]
+[2019.05.03-15.33.30:634][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2019.05.03-15.33.30:634][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Engine.ini]
+[2019.05.03-15.33.30:634][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Engine.ini]
+[2019.05.03-15.33.30:634][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2019.05.03-15.33.30:634][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2019.05.03-15.33.30:634][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2019.05.03-15.33.30:634][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2019.05.03-15.33.30:634][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2019.05.03-15.33.30:634][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2019.05.03-15.33.30:635][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2019.05.03-15.33.30:635][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2019.05.03-15.33.30:635][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2019.05.03-15.33.30:635][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2019.05.03-15.33.30:635][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2019.05.03-15.33.30:635][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2019.05.03-15.33.30:635][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2019.05.03-15.33.30:635][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Engine.ini]
+[2019.05.03-15.33.30:635][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2019.05.03-15.33.30:635][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2019.05.03-15.33.30:635][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2019.05.03-15.33.30:635][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2019.05.03-15.33.30:635][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2019.05.03-15.33.30:635][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2019.05.03-15.33.30:635][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:8388607]]
+[2019.05.03-15.33.30:635][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2019.05.03-15.33.30:635][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2019.05.03-15.33.30:635][  0]LogConfig: Setting CVar [[gc.MergeGCClusters:0]]
+[2019.05.03-15.33.30:635][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2019.05.03-15.33.30:635][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2019.05.03-15.33.30:635][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2019.05.03-15.33.30:635][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2019.05.03-15.33.30:635][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Engine.ini]
+[2019.05.03-15.33.30:635][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Engine.ini]
+[2019.05.03-15.33.30:637][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
+[2019.05.03-15.33.30:637][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.05.03-15.33.30:637][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.05.03-15.33.30:637][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
+[2019.05.03-15.33.30:637][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2019.05.03-15.33.30:637][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
+[2019.05.03-15.33.30:637][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.05.03-15.33.30:637][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.05.03-15.33.30:637][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.05.03-15.33.30:637][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.05.03-15.33.30:637][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.05.03-15.33.30:637][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.05.03-15.33.30:637][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.05.03-15.33.30:637][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.05.03-15.33.30:637][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.05.03-15.33.30:637][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.05.03-15.33.30:637][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.05.03-15.33.30:637][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.05.03-15.33.30:637][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.05.03-15.33.30:637][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.05.03-15.33.30:637][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.05.03-15.33.30:637][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.05.03-15.33.30:637][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.05.03-15.33.30:637][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.05.03-15.33.30:637][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
+[2019.05.03-15.33.30:637][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2019.05.03-15.33.30:637][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.05.03-15.33.30:637][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.05.03-15.33.30:637][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2019.05.03-15.33.30:637][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.05.03-15.33.30:637][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2019.05.03-15.33.30:637][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.05.03-15.33.30:638][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.05.03-15.33.30:638][  0]LogInit: Selected Device Profile: [Windows]
+[2019.05.03-15.33.30:638][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2019.05.03-15.33.30:646][  0]LogHAL: Display: Platform has ~ 8 GB [8518709248 / 8589934592 / 8], which maps to Default [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2019.05.03-15.33.30:646][  0]LogConfig: Setting CVar [[r.Vulkan.UseRealUBs:1]]
+[2019.05.03-15.33.30:646][  0]LogInit: Going up to parent DeviceProfile []
+[2019.05.03-15.33.30:646][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
+[2019.05.03-15.33.30:646][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.05.03-15.33.30:646][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.05.03-15.33.30:646][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
+[2019.05.03-15.33.30:646][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Scalability.ini]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.05.03-15.33.30:647][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2019.05.03-15.33.30:648][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2019.05.03-15.33.30:648][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Config/Windows/Engine.ini]
+[2019.05.03-15.33.30:648][  0]LogInit: Computer: RYZEN
+[2019.05.03-15.33.30:648][  0]LogInit: User: Victor
+[2019.05.03-15.33.30:648][  0]LogInit: CPU Page size=4096, Cores=4
+[2019.05.03-15.33.30:648][  0]LogInit: High frequency timer resolution =3.703975 MHz
+[2019.05.03-15.33.30:648][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2019.05.03-15.33.30:648][  0]LogMemory: Platform Memory Stats for Windows
+[2019.05.03-15.33.30:648][  0]LogMemory: Process Physical Memory: 102.16 MB used, 102.16 MB peak
+[2019.05.03-15.33.30:648][  0]LogMemory: Process Virtual Memory: 85.04 MB used, 85.04 MB peak
+[2019.05.03-15.33.30:648][  0]LogMemory: Physical Memory: 4311.04 MB used,  3813.04 MB free, 8124.07 MB total
+[2019.05.03-15.33.30:648][  0]LogMemory: Virtual Memory: 4619.60 MB used,  134213112.00 MB free, 134217728.00 MB total
+[2019.05.03-15.33.30:671][  0]LogInit: Using OS detected language (bg-BG).
+[2019.05.03-15.33.30:671][  0]LogInit: Using OS detected locale (bg-BG).
+[2019.05.03-15.33.30:673][  0]LogTextLocalizationManager: No localization for 'bg-BG' exists, so 'en' will be used for the language.
+[2019.05.03-15.33.31:067][  0]LogStreaming: Display: Took  0.396s to InitEngineTextLocalization.
+[2019.05.03-15.33.31:067][  0]LogInit: Setting process to per monitor DPI aware
+[2019.05.03-15.33.31:092][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2019.05.03-15.33.31:092][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2019.05.03-15.33.31:311][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.05.03-15.33.31:311][  0]LogD3D11RHI: D3D11 adapters:
+[2019.05.03-15.33.31:391][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1050 Ti' (Feature Level 11_0)
+[2019.05.03-15.33.31:391][  0]LogD3D11RHI:       4018/0/4062 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2019.05.03-15.33.31:393][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2019.05.03-15.33.31:393][  0]LogD3D11RHI:       0/0/4062 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2019.05.03-15.33.31:393][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2019.05.03-15.33.31:401][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2019.05.03-15.33.31:401][  0]LogD3D11RHI:     GPU DeviceId: 0x1c82 (for the marketing name, search the web for "GPU Device Id")
+[2019.05.03-15.33.31:401][  0]LogWindows: EnumDisplayDevices:
+[2019.05.03-15.33.31:402][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1050 Ti' (P:1 D:1)
+[2019.05.03-15.33.31:402][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1050 Ti' (P:0 D:0)
+[2019.05.03-15.33.31:402][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1050 Ti' (P:0 D:0)
+[2019.05.03-15.33.31:402][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1050 Ti' (P:0 D:0)
+[2019.05.03-15.33.31:402][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2019.05.03-15.33.31:402][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1050 Ti
+[2019.05.03-15.33.31:402][  0]LogD3D11RHI:   Driver Version: 419.67 (internal:25.21.14.1967, unified:419.67)
+[2019.05.03-15.33.31:402][  0]LogD3D11RHI:      Driver Date: 3-17-2019
+[2019.05.03-15.33.31:402][  0]LogRHI: Texture pool is 2812 MB (70% of 4018 MB)
+[2019.05.03-15.33.31:455][  0]LogD3D11RHI: Async texture creation enabled
+[2019.05.03-15.33.31:473][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2019.05.03-15.33.31:856][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2019.05.03-15.33.31:870][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2019.05.03-15.33.31:885][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2019.05.03-15.33.31:899][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2019.05.03-15.33.31:915][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2019.05.03-15.33.31:929][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2019.05.03-15.33.31:944][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2019.05.03-15.33.31:959][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2019.05.03-15.33.31:967][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2019.05.03-15.33.32:055][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.03-15.33.32:055][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.03-15.33.32:055][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.03-15.33.32:055][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.03-15.33.32:055][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.03-15.33.32:055][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.03-15.33.32:055][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.03-15.33.32:055][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.03-15.33.32:055][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.03-15.33.32:055][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.03-15.33.32:055][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.03-15.33.32:055][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.03-15.33.32:055][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.03-15.33.32:055][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.03-15.33.32:055][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.03-15.33.32:055][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.03-15.33.32:055][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.03-15.33.32:055][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.05.03-15.33.32:056][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2019.05.03-15.33.32:127][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2019.05.03-15.33.32:127][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2019.05.03-15.33.32:153][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2019.05.03-15.33.32:153][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2019.05.03-15.33.32:167][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2019.05.03-15.33.32:181][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2019.05.03-15.33.32:195][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2019.05.03-15.33.32:216][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2019.05.03-15.33.32:270][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
+[2019.05.03-15.33.32:270][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
+[2019.05.03-15.33.32:270][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2019.05.03-15.33.32:330][  0]LogShaderCompilers: Guid format shader working directory is -31 characters bigger than the processId version (../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Intermediate/Shaders/WorkingDirectory/7452/).
+[2019.05.03-15.33.32:330][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Victor/AppData/Local/Temp/UnrealShaderWorkingDir/702ADA034D5C9AE7D370EAA0C6E495DA/'.
+[2019.05.03-15.33.32:332][  0]LogXGEController: Cleaning working directory: C:/Users/Victor/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2019.05.03-15.33.32:332][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2019.05.03-15.33.32:332][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2019.05.03-15.33.32:332][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2019.05.03-15.33.32:922][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2019.05.03-15.33.32:979][  0]LogDerivedDataCache: Loaded boot cache 0.06s 71MB C:/Users/Victor/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
+[2019.05.03-15.33.32:979][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Victor/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc
+[2019.05.03-15.33.32:979][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2019.05.03-15.33.32:979][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2019.05.03-15.33.32:980][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2019.05.03-15.33.32:980][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2019.05.03-15.33.32:998][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2019.05.03-15.33.32:998][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2019.05.03-15.33.32:998][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2019.05.03-15.33.33:011][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Victor/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2019.05.03-15.33.33:011][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2019.05.03-15.33.33:011][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2019.05.03-15.33.33:034][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2019.05.03-15.33.33:036][  0]LogSlate: Using FreeType 2.6.0
+[2019.05.03-15.33.33:036][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2019.05.03-15.33.33:141][  0]LogAssetRegistry: FAssetRegistry took 0.0350 seconds to start up
+[2019.05.03-15.33.33:492][  0]LogInit: Selected Device Profile: [Windows]
+[2019.05.03-15.33.33:640][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2019.05.03-15.33.33:644][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2019.05.03-15.33.33:644][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2019.05.03-15.33.33:644][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2019.05.03-15.33.33:644][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2019.05.03-15.33.33:659][  0]LogNetVersion: greybox_level_test 1.0.0, NetCL: 4541578, EngineNetVer: 5, GameNetVer: 0 (Checksum: 3484623482)
+[2019.05.03-15.33.34:217][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 1 prioritized culture(s) in 0.043612 seconds
+[2019.05.03-15.33.34:226][  0]LogUObjectArray: 39775 objects as part of root set at end of initial load.
+[2019.05.03-15.33.34:226][  0]LogUObjectAllocator: 6914656 out of 0 bytes used by permanent object pool.
+[2019.05.03-15.33.34:226][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2019.05.03-15.33.35:161][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2019.05.03-15.33.35:174][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2019.05.03-15.33.35:947][  0]SourceControl: Source control is disabled
+[2019.05.03-15.33.35:948][  0]SourceControl: Source control is disabled
+[2019.05.03-15.33.35:949][  0]SourceControl: Source control is disabled
+[2019.05.03-15.33.35:950][  0]SourceControl: Source control is disabled
+[2019.05.03-15.33.36:124][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2019.05.03-15.33.36:203][  0]LogOcInput: OculusInput pre-init called
+[2019.05.03-15.33.36:353][  0]LogEngine: Initializing Engine...
+[2019.05.03-15.33.36:354][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.05.03-15.33.36:355][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2019.05.03-15.33.36:355][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2019.05.03-15.33.36:355][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2019.05.03-15.33.36:355][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2019.05.03-15.33.36:583][  0]LogInit: Initializing FReadOnlyCVARCache
+[2019.05.03-15.33.36:666][  0]LogAIModule: Creating AISystem for world Untitled
+[2019.05.03-15.33.36:677][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 4 channels at 48 kHz using 32 bits per sample (channel mask 0x33)
+[2019.05.03-15.33.36:696][  0]LogInit: FAudioDevice initialized.
+[2019.05.03-15.33.36:696][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2019.05.03-15.33.36:775][  0]LogDerivedDataCache: Saved boot cache 0.08s 71MB C:/Users/Victor/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
+[2019.05.03-15.33.36:775][  0]LogInit: Texture streaming: Enabled
+[2019.05.03-15.33.36:816][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2019.05.03-15.33.36:863][  0]LogInit: Transaction tracking system initialized
+[2019.05.03-15.33.36:995][  0]BlueprintLog: New page: Editor Load
+[2019.05.03-15.33.37:315][  0]LocalizationService: Localization service is disabled
+[2019.05.03-15.33.38:253][  0]LogFileCache: Scanning file cache for directory 'E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/' took 0.02s
+[2019.05.03-15.33.38:253][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2019.05.03-15.33.38:254][  0]LogCook: Display: Mobile HDR setting 1
+[2019.05.03-15.33.38:254][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2019.05.03-15.33.38:254][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2019.05.03-15.33.38:254][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2019.05.03-15.33.38:254][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2019.05.03-15.33.38:254][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2019.05.03-15.33.38:946][  0]SourceControl: Source control is disabled
+[2019.05.03-15.33.38:946][  0]Cmd: MAP LOAD FILE="../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.05.03-15.33.38:946][  0]LogEditorServer: Warning: Can't find file '../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap'
+[2019.05.03-15.33.38:946][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.05.03-15.33.38:946][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,117ms to complete.
+[2019.05.03-15.33.38:946][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.000
+[2019.05.03-15.33.39:088][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.05.03-15.33.39:096][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.05.03-15.33.39:103][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.05.03-15.33.39:111][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.05.03-15.33.39:174][  0]LogCollectionManager: Loaded 0 collections in 0.001680 seconds
+[2019.05.03-15.33.39:233][  0]LogFileCache: Scanning file cache for directory 'E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Saved/Collections/' took 0.01s
+[2019.05.03-15.33.39:233][  0]LogFileCache: Scanning file cache for directory 'E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/Developers/Victor/Collections/' took 0.00s
+[2019.05.03-15.33.39:233][  0]LogFileCache: Scanning file cache for directory 'E:/Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/Collections/' took 0.01s
+[2019.05.03-15.33.39:233][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2019.05.03-15.33.39:243][  0]LogContentBrowser: Native class hierarchy populated in 0.0095 seconds. Added 2651 classes and 620 folders.
+[2019.05.03-15.33.39:253][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2019.05.03-15.33.39:254][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.03-15.33.39:255][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.03-15.33.39:255][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.03-15.33.39:256][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.03-15.33.39:256][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.03-15.33.39:257][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.03-15.33.39:257][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.03-15.33.39:258][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.03-15.33.39:258][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.03-15.33.39:258][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.03-15.33.39:259][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.03-15.33.39:259][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.03-15.33.39:260][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.03-15.33.39:260][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.03-15.33.39:261][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.03-15.33.39:261][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.03-15.33.39:262][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.03-15.33.39:262][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.03-15.33.39:263][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.03-15.33.39:263][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.03-15.33.39:263][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.03-15.33.39:264][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.03-15.33.39:264][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.03-15.33.39:265][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.03-15.33.39:265][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.03-15.33.39:266][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.05.03-15.33.39:309][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2019.05.03-15.33.39:314][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2019.05.03-15.33.39:330][  0]LogSlate: Took 0.000268 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2019.05.03-15.33.39:333][  0]LogSlate: Took 0.000258 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2019.05.03-15.33.39:339][  0]LogSlate: Took 0.000233 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2019.05.03-15.33.39:414][  0]LogRenderer: Reallocating scene render targets to support 1044x652 Format 10 NumSamples 1 (Frame:1).
+[2019.05.03-15.33.39:571][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2019.05.03-15.33.39:571][  0]LogLoad: (Engine Initialization) Total time: 10.80 seconds
+[2019.05.03-15.33.39:571][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2019.05.03-15.33.39:611][  0]LogAssetRegistry: Asset discovery search completed in 6.4931 seconds
+[2019.05.03-15.33.39:612][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2019.05.03-15.33.39:612][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000059 seconds (updated 0 objects)
+[2019.05.03-15.33.39:614][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2019.05.03-15.33.39:636][  0]LogSlate: Took 0.000229 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.05.03-15.33.48:597][131]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.03-15.33.48:741][148]LogSlate: Took 0.000222 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.05.03-15.33.49:068][148]LogAIModule: Creating AISystem for world Level_5
+[2019.05.03-15.33.49:089][148]LogAssetEditorManager: Opening Asset editor for World /Game/FirstPersonBP/Maps/Level_5.Level_5
+[2019.05.03-15.33.49:116][148]Cmd: MAP LOAD FILE="../../../../../Repository/mgp-team-5/Documents/GreyBoxing/greybox_level_testv2/Content/FirstPersonBP/Maps/Level_5.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.05.03-15.33.49:116][148]LightingResults: New page: Lighting Build
+[2019.05.03-15.33.49:118][148]LogContentBrowser: Native class hierarchy updated for 'StatsViewer' in 0.0003 seconds. Added 5 classes and 0 folders.
+[2019.05.03-15.33.49:119][148]LoadErrors: New page: Loading map: Level_5.umap
+[2019.05.03-15.33.49:119][148]MapCheck: New page: Map Check
+[2019.05.03-15.33.49:119][148]LightingResults: New page: Lighting Build
+[2019.05.03-15.33.49:184][148]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.05.03-15.33.49:223][148]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.05.03-15.33.49:223][148]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,124ms to complete.
+[2019.05.03-15.33.49:223][148]LogFileHelpers: Loading map 'Level_5' took 0.108
+[2019.05.03-15.34.05:997][794]LogSlate: FSceneViewport::OnFocusLost() reason 0
